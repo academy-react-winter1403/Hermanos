@@ -1,7 +1,5 @@
 import { Outlet } from "react-router-dom";
 
-// there is no need for this component to have a children route , just have this your mind...
-
 function CoursesPage() {
   return (
     <div>
@@ -18,6 +16,7 @@ function CoursesPage() {
       <div className="course-slider border mx-[auto] w-[99%] h-[100px]">
         course-slider
       </div>
+      ======= CoursesPage
     </div>
   );
 }
