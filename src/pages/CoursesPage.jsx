@@ -5,8 +5,6 @@ import CoursesHolder from "../components/coursesPage-components/CoursesHolder";
 import CoursesFilter from "../components/coursesPage-components/CoursesFilter";
 import SectionTitle from "../components/common/SectionTitle";
 
-// there is no need for this component to have a children route , just have this your mind...
-
 function CoursesPage() {
   return (
     <div>
@@ -20,6 +18,7 @@ function CoursesPage() {
       <div className="course-slider border mx-[auto] w-[99%] h-[100px]">
         course-slider
       </div>
+      ======= CoursesPage
     </div>
   );
 }
