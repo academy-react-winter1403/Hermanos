@@ -14,8 +14,9 @@ function CoursesPage() {
         <MainCoursesSearch />
         <CoursesHolder />
         <CoursesFilter />
+        <SectionTitle> دوره های برتر </SectionTitle>
       </div>
-      <div className="course-slider border mx-[auto] w-[99%] h-[100px]">
+      <div className="course-slider border mt-[40px] mx-[auto] w-[99%] h-[100px]">
         course-slider
       </div>
     </div>
