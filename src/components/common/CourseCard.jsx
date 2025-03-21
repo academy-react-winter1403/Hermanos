@@ -1,3 +1,4 @@
+import Button from "./Button";
 import React from "react";
 
 function CourseCard() {
@@ -85,13 +86,25 @@ function CourseCard() {
             : هزینه تمام دوره
           </div>
         </div>
-        <div className="course-btns mt-[15px] w-[87%] h-[45px] mx-[auto] gap-[2px] flex flex-row flex-nowrap justify-between">
-          <div className="course-reserve w-[50%] h-[100%] rounded-[12px] bg-[rgba(91,225,185,1)] text-center leading-[35px] text-[18px]">
+        <div className="course-btns mt-[15px] w-[87%] h-[45px] mx-[auto] gap-[5px] flex flex-row flex-nowrap justify-between">
+          <Button
+            className="course-reserve"
+            width="50%"
+            height="100%"
+            bg="rgba(91,225,185,1)"
+            radius="12px"
+          >
             رزرو دوره
-          </div>
-          <div className="course-detail border w-[50%] h-[100%] rounded-[12px] border-[rgba(91,225,185,1)] text-center leading-[35px] text-[18px]">
+          </Button>
+          <Button
+            className="course-reserve"
+            width="50%"
+            height="100%"
+            radius="12px"
+            borderColor="rgba(91,225,185,1)"
+          >
             جزییات دوره
-          </div>
+          </Button>
         </div>
       </div>
     </div>
