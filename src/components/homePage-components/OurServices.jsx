@@ -1,13 +1,18 @@
 import React from "react";
+import SectionTitle from "../common/SectionTitle";
 
 const OurServices = () => {
   return (
     <div className="sevices-container">
       <div className="py-16 mx-[30px] bg-white">
-        <h2 className="text-center text-3xl font-bold mb-[15px]">خدمات ما</h2>
+        {/* <h2 className="text-center text-3xl font-bold mb-[15px]">خدمات ما</h2>
         <p className="text-center ">
           ما فرصت آماده شدن برای زندگی را فراهم می کنیم
-        </p>
+        </p> */}
+        <SectionTitle
+          title="خدمات ما"
+          description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-15 mt-15 px-35 ">
           {[
             {

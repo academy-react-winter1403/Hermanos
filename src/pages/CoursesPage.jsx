@@ -10,11 +10,14 @@ function CoursesPage() {
     <div>
       <Outlet />
       <div className="main-courses mx-[auto] gap-[10px] w-[95%] flex flex-wrap flex-row justify-center">
-        <SectionTitle>لیست دوره ها</SectionTitle>
+        <SectionTitle title="لیست دوره ها  " />
         <MainCoursesSearch />
         <CoursesHolder />
         <CoursesFilter />
-        <SectionTitle> دوره های برتر </SectionTitle>
+        <SectionTitle
+          title=" دوره های برتر "
+          description="ساختن دنیایی بهتر، یک دوره در یک زمان"
+        />
       </div>
       <div className="course-slider border mt-[40px] mx-[auto] w-[99%] h-[100px]">
         course-slider

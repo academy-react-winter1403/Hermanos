@@ -1,10 +1,13 @@
 import React from "react";
 
-function SectionTitle({ children }) {
+function SectionTitle({ title, description }) {
   return (
-    <h2 className="section-title mx-[auto] text-[30px] mt-[80px] mb-[30px]">
-      {children}
-    </h2>
+    <div className="text-center">
+      <h2 className="section-title mx-[auto] text-[30px] mt-[80px] mb-[30px]">
+        {title}
+      </h2>
+      <p className="section-description block mx-[auto]"> {description} </p>
+    </div>
   );
 }
 
