@@ -1,10 +1,11 @@
 import { Outlet } from "react-router-dom";
+import ReusableForm from "../components/loginPage-components/ReusableForm";
 
 function LoginPage() {
   return (
     <div>
       <Outlet />
-      LoginPage
+      <ReusableForm />
     </div>
   );
 }

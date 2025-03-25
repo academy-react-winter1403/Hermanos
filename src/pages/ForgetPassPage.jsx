@@ -1,5 +1,7 @@
+import ForgetPasswordForm from "../components/loginPage-components/ForgetPasswordForm";
+
 function ForgetPassPage() {
-  return <div>ForgetPassPage</div>;
+  return <ForgetPasswordForm />;
 }
 
 export default ForgetPassPage;
