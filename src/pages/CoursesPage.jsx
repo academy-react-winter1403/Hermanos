@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import MainCoursesSearch from "../components/coursesPage-components/MainCoursesSearch";
 import CoursesHolder from "../components/coursesPage-components/CoursesHolder";
 import CoursesFilter from "../components/coursesPage-components/CoursesFilter";
+import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 
 function CoursesPage() {
   return (
@@ -13,9 +14,7 @@ function CoursesPage() {
         <CoursesHolder />
         <CoursesFilter />
       </div>
-      <div className="course-slider border mx-[auto] w-[99%] h-[100px]">
-        course-slider
-      </div>
+      <CoursesSlider />
       ======= CoursesPage
     </div>
   );

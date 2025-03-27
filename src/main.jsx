@@ -14,6 +14,10 @@ import ForgetPassPage from "./pages/ForgetPassPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
+import LoginTwoStep from "./components/loginPage-components/LoginTwoStep.jsx";
+import RegisterStepOne from "./components/loginPage-components/RegisterStepOne.jsx";
+import RegisterStepTwo from "./components/loginPage-components/RegisterStepTwo.jsx";
+import RegisterStepThree from "./components/loginPage-components/RegisterStepThree.jsx";
 
 const router = createBrowserRouter([
   {
@@ -61,6 +65,11 @@ const router = createBrowserRouter([
     element: <LoginPage />,
     children: [
       {
+        path: "/login/two-step",
+        element: <LoginTwoStep />,
+      },
+
+      {
         path: "/login/forget-password",
         element: <ForgetPassPage />,
       },
@@ -69,6 +78,22 @@ const router = createBrowserRouter([
   {
     path: "/sign-up",
     element: <SignUpPage />,
+    children: [
+      {
+        index: true,
+        path: "/sign-up/step-one",
+        element: <RegisterStepOne />,
+      },
+
+      {
+        path: "/sign-up/step-two",
+        element: <RegisterStepTwo />,
+      },
+      {
+        path: "/sign-up/step-three",
+        element: <RegisterStepThree />,
+      },
+    ],
   },
   {
     path: "*",
