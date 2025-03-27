@@ -1,9 +1,10 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LoginTwoStep = () => {
+  const navigation = useNavigate();
   const initialValues = { verificationCode: "" };
   const validationSchema = Yup.object({
     verificationCode: Yup.string().required("این فیلد الزامیست"),
@@ -11,6 +12,7 @@ const LoginTwoStep = () => {
   const handleSubmit = (values) => {
     console.log("Form data", values);
   };
+  const previousPage = () => navigation("/login");
 
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
@@ -63,7 +65,7 @@ const LoginTwoStep = () => {
                 ورود
               </button>
               <button
-                type="submit"
+                onClick={previousPage}
                 className="bg-white border h-[50px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-3"
               >
                 بازگشت به صفحه قبل

@@ -13,6 +13,7 @@ const RegisterStepTwo = () => {
     console.log("Form data", values);
     navigation("/sign-up/step-three");
   };
+  const previousPage = () => navigation("/sign-up/step-one");
 
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
@@ -65,7 +66,7 @@ const RegisterStepTwo = () => {
                 ادامه
               </button>
               <button
-                type="submit"
+                onClick={previousPage}
                 className="bg-white border h-[50px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-4"
               >
                 بازگشت به صفحه قبل

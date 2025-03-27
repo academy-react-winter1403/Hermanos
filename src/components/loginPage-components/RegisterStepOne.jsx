@@ -13,6 +13,7 @@ const RegisterStepOne = () => {
     console.log("Form data", values);
     navigation("/sign-up/step-two");
   };
+  const previousPage = () => navigation("/");
 
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
@@ -65,7 +66,7 @@ const RegisterStepOne = () => {
                 ادامه
               </button>
               <button
-                type="submit"
+                onClick={previousPage}
                 className="bg-white border h-[50px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-3"
               >
                 بازگشت به صفحه اصلی
@@ -73,7 +74,7 @@ const RegisterStepOne = () => {
               <p className="mt-6 text-end">
                 <span>
                   <Link
-                    to="/sign-up"
+                    to="/login"
                     className="text-[rgba(34,68,93,1)] underline text-sm"
                   >
                     من از قبل عضو هستم

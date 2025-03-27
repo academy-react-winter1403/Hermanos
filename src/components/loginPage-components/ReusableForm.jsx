@@ -2,6 +2,7 @@ import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link, useNavigate } from "react-router-dom";
+import Button from "../common/Button";
 
 const ReusableForm = () => {
   const navigation = useNavigate();
@@ -14,6 +15,7 @@ const ReusableForm = () => {
     console.log("Form data", values);
     navigation("/login/two-step");
   };
+
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
       <div className="holder flex flex-row-reverse h-[80%] w-[70%] drop-shadow-xl ">
@@ -64,14 +66,9 @@ const ReusableForm = () => {
               >
                 تایید
               </button>
-              <button
-                type="submit"
-                className="bg-white border h-[50px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-3"
-              >
-                بازگشت به صفحه اصلی
-              </button>
-              <p className="mt-6 text-end">
-                <span className="ml-[170px]">
+              <Button />
+              <p className="mt-6 text-end ">
+                <span className="ml-21">
                   <Link
                     to="/sign-up"
                     className="text-[rgba(34,68,93,1)] underline text-sm"
@@ -79,7 +76,7 @@ const ReusableForm = () => {
                     یک حساب کاربری ایجاد کنید
                   </Link>
                 </span>
-                <span>
+                <span className="mr-21">
                   <Link
                     to="/login/forget-password"
                     className="text-[rgba(34,68,93,1)] underline text-sm"
