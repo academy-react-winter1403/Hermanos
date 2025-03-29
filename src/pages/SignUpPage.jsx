@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import RegisterStepOne from "../components/loginPage-components/RegisterStepOne";
-import RegisterStepTwo from "../components/loginPage-components/RegisterStepTwo";
-import RegisterStepThree from "../components/loginPage-components/RegisterStepThree";
+import RegisterStepOne from "../components/signUpPage-components/RegisterStepOne";
+import RegisterStepTwo from "../components/signUpPage-components/RegisterStepTwo";
+import RegisterStepThree from "../components/signUpPage-components/RegisterStepThree";
 
 function SignUpPage() {
   return (

@@ -15,9 +15,9 @@ import SignUpPage from "./pages/SignUpPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import NotFoundPage from "./pages/NotFoundPage.jsx";
 import LoginTwoStep from "./components/loginPage-components/LoginTwoStep.jsx";
-import RegisterStepOne from "./components/loginPage-components/RegisterStepOne.jsx";
-import RegisterStepTwo from "./components/loginPage-components/RegisterStepTwo.jsx";
-import RegisterStepThree from "./components/loginPage-components/RegisterStepThree.jsx";
+import RegisterStepOne from "./components/signUpPage-components/RegisterStepOne.jsx";
+import RegisterStepTwo from "./components/signUpPage-components/RegisterStepTwo.jsx";
+import RegisterStepThree from "./components/signUpPage-components/RegisterStepThree.jsx";
 
 const router = createBrowserRouter([
   {
