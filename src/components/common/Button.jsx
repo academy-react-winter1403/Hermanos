@@ -10,6 +10,7 @@ function Button({
   radius,
   borderColor,
   marginX = "auto",
+  navigationTo,
 }) {
   return (
     <div
@@ -17,7 +18,7 @@ function Button({
         borderColor ? `border border-[${borderColor}]` : ""
       } w-[${width}] h-[${height}] rounded-[${radius}] mx-[${marginX}] bg-[${bg}] text-center text-[${fontSize}] mb-[30px] flex items-center justify-center`}
     >
-      <NavLink> {children}</NavLink>
+      <NavLink to={navigationTo}> {children}</NavLink>
     </div>
   );
 }

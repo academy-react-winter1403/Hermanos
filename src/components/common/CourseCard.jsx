@@ -102,6 +102,7 @@ function CourseCard() {
             height="100%"
             radius="12px"
             borderColor="rgba(91,225,185,1)"
+            navigationTo="/courses/:id"
           >
             جزییات دوره
           </Button>
