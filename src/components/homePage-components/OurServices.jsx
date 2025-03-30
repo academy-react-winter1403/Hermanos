@@ -1,4 +1,5 @@
 import React from "react";
+import SectionTitle from "../common/SectionTitle";
 
 const OurServices = () => {
   const services = [
@@ -42,12 +43,21 @@ const OurServices = () => {
   return (
     <div className="sevices-container">
       <div className="py-16 mx-[30px] bg-white">
+<<<<<<< HEAD
         <h2 className="text-center text-3xl font-bold mb-[15px] text-[rgba(34,68,93,1)]">
           خدمات ما
         </h2>
         <p className="text-center text-[rgba(34,68,93,1)] ">
+=======
+        {/* <h2 className="text-center text-3xl font-bold mb-[15px]">خدمات ما</h2>
+        <p className="text-center ">
+>>>>>>> AMIR
           ما فرصت آماده شدن برای زندگی را فراهم می کنیم
-        </p>
+        </p> */}
+        <SectionTitle
+          title="خدمات ما"
+          description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
+        />
         <div className="grid grid-cols-1 md:grid-cols-3 gap-15 mt-15 px-35 ">
           {services.map((service, index) => (
             <div key={index} className="p-6  rounded-lg text-end shadow-md">
