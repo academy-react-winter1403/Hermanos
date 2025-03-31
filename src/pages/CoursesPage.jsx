@@ -1,13 +1,10 @@
 import MainCoursesSearch from "../components/coursesPage-components/MainCoursesSearch";
 import CoursesHolder from "../components/coursesPage-components/CoursesHolder";
 import CoursesFilter from "../components/coursesPage-components/CoursesFilter";
-<<<<<<< HEAD
 import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
-=======
 import SectionTitle from "../components/common/SectionTitle";
 import CourseCard from "../components/common/CourseCard";
 import Button from "../components/common/Button";
->>>>>>> AMIR
 
 function CoursesPage() {
   return (
@@ -22,10 +19,7 @@ function CoursesPage() {
           description="ساختن دنیایی بهتر، یک دوره در یک زمان"
         />
       </div>
-<<<<<<< HEAD
       <CoursesSlider />
-      ======= CoursesPage
-=======
       <div className="course-slider mt-[80px] mx-[auto] w-[99%] flex flex-row gap-[40px] flex-nowrap justify-center mb-[100px] relative">
         <CourseCard />
         <CourseCard />
@@ -40,7 +34,6 @@ function CoursesPage() {
       >
         مشاهده دوره های بیشتر
       </Button>
->>>>>>> AMIR
     </div>
   );
 }
