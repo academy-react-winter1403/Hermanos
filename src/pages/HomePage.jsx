@@ -1,19 +1,23 @@
-import { Outlet } from "react-router-dom";
+// import { Outlet } from "react-router-dom";
 import HeroSection from "../components/homePage-components/HeroSection";
 import OurServices from "../components/homePage-components/OurServices";
-import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 import HeroStatistics from "../components/homePage-components/HeroStatistics";
+import Category from "../components/homePage-components/Category";
+import OurCourses from "../components/homePage-components/OurCourses";
+import OurProfessionals from "../components/homePage-components/OurProfessionals";
 
 function HomePage() {
   return (
-    <div className="homePage-content mx-[30px]">
+    <div className="homePage-content mx-[10px]">
       <HeroSection />
 
       <OurServices />
 
       <HeroStatistics />
 
-      {/* <CoursesSlider /> */}
+      <Category />
+      <OurCourses />
+      <OurProfessionals />
     </div>
   );
 }

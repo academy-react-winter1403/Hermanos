@@ -6,7 +6,7 @@ function LayOutPage() {
   return (
     <div className="layout-container border-transparent flex flex-wrap flex-col justify-center items-center">
       <Header />
-      <div className="main-container border mx-[auto] w-[95%]">
+      <div className="main-container w-[95%]">
         <Outlet />
       </div>
       <Footer />
