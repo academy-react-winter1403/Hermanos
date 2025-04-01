@@ -22,19 +22,22 @@ import { NavLink } from "react-router-dom";
 function Button({
   children,
   bg = "",
-  fontSize = "18px",
+  fontSize = "",
   width,
   height,
   radius,
   borderColor,
-  marginX = "auto",
+  // marginX = "auto",
+  // marginY = "auto",
   navigationTo,
+  textColor = "",
+  lineHeight = "",
 }) {
   return (
     <div
       className={`${
         borderColor ? `border border-[${borderColor}]` : ""
-      } w-[${width}] h-[${height}] rounded-[${radius}] mx-[${marginX}] bg-[${bg}] text-center text-[${fontSize}] mb-[30px] flex items-center justify-center`}
+      } w-[${width}] h-[${height}] rounded-[${radius}]  bg-[${bg}] text-center text-[${textColor}] text-[${fontSize}] mb-[30px] leading-[${lineHeight}] flex items-center justify-center`}
     >
       <NavLink to={navigationTo}> {children}</NavLink>
     </div>

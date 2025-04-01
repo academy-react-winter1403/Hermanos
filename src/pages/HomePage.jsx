@@ -2,18 +2,18 @@ import { Outlet } from "react-router-dom";
 import HeroSection from "../components/homePage-components/HeroSection";
 import OurServices from "../components/homePage-components/OurServices";
 import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
+import HeroStatistics from "../components/homePage-components/HeroStatistics";
 
 function HomePage() {
   return (
-    <div className="homePage-content">
+    <div className="homePage-content mx-[30px]">
       <HeroSection />
 
       <OurServices />
 
-      {/* Statistics */}
+      <HeroStatistics />
 
-      <div className="statistics-box flex flex-row rounded-3xl bg-[rgba(91,225,185,1)] w-[90%] h-[300px] mx-auto my-[50px]"></div>
-      <CoursesSlider />
+      {/* <CoursesSlider /> */}
     </div>
   );
 }
