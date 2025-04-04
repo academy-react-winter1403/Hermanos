@@ -1,24 +1,34 @@
 import React from "react";
+import Button from "../common/Button";
 
 const HeroSection = () => {
   return (
-    <div className="h-[500px] flex flex-row-reverse gap-[20px] text-end py-20 bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
-      <div className="intro w-[50%] mr-[50px] ">
+    <div className="h-[700px] flex flex-row-reverse justify-center text-end py-20 bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
+      <div className="intro w-[45%] h-[400px] my-[auto]">
         <h2 className="text-4xl  font-bold pb-5 ">آموزشگاه اچ وان</h2>
-        <p className="mt-4 text-gray-600 w-3/4 mx-40 pb-7">
+        <p className="mt-[30px] text-gray-600 mb-[70px] w-3/4 ml-[auto] pb-7">
           لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
           دهندگان وب، تایپوگراف ها و طراحان استفاده می شود. تکه های لاتین متن
           نشان می دهد که یک پروژه در حال توسعه است. لورم اپسوم فقط برای توسعه
           دهندگان وب نیست. طراحان گرافیک نیز از آن با نرم افزارهای مختلفی مانند
           فوتوشاپ استفاده می کنند.
         </p>
-        <button className="mt-6 bg-[rgba(18,146,108,1)] text-white px-6 py-3 rounded-[51px] cursor-pointer">
+        <Button
+          height="50px"
+          marginX="start"
+          marginLeft="auto"
+          width="150px"
+          radius="51px"
+          bg="rgba(18,146,108,1)"
+          fontSize="14px"
+          color="rgb(255, 255, 255)"
+        >
           شروع یادگیری
-        </button>
+        </Button>
       </div>
-      <div className="intro-image h-[400px] my-[-30px] ">
+      <div className="intro-image w-[40%] h-[550px]">
         <img
-          className="w-[750px] h-[400px] "
+          className="w-[100%] h-[100%] "
           src="/images/3190341@2x.svg"
           alt=""
         />

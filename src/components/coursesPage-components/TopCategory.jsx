@@ -3,19 +3,18 @@ import React from "react";
 function TopCategory() {
   return (
     <div className="useless-holder flex flex-row gap-[20px] flex-nowrap w-[320px] h-[60px] mr-[60px]">
-      <div className="category border rounded-[43px] border-[rgba(21,139,104,1)] w-[200px] h-[100%]">
-        {/* <div
-    tabIndex={0}
-    className="collapse collapse-arrow bg-base-100 border-base-300 border"
-  >
-    <div className="collapse-title font-semibold">
-      How do I create an account?
-    </div>
-    <div className="collapse-content text-sm">
-      Click the "Sign Up" button in the top right corner and follow the
-      registration process.
-    </div>
-  </div> */}
+      <div className="category rounded-[43px] w-[200px] h-[100%]">
+        <div
+          tabIndex={0}
+          className="collapse collapse-arrow border border-[rgba(21,139,104,1)] rounded-[43px]"
+        >
+          <div className="collapse-title font-semibold w-[200px] h-[60px]">
+            مرتب سازی
+          </div>
+          <div className="collapse-content text-sm">
+            نمیدونم مرتب سازیش برچه اساسیه
+          </div>
+        </div>
       </div>
       <div className="useless-btn border rounded-[43px] border-[rgba(21,139,104,1)] w-[100px] h-[100%]">
         <span className="left-btn  w-[50%] h-[100%] inline-block  rounded-l-[43px]">

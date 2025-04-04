@@ -29,12 +29,14 @@ function Button({
   borderColor,
   marginX = "auto",
   navigationTo,
+  marginLeft,
+  color,
 }) {
   return (
     <div
       className={`${
         borderColor ? `border border-[${borderColor}]` : ""
-      } w-[${width}] h-[${height}] rounded-[${radius}] mx-[${marginX}] bg-[${bg}] text-center text-[${fontSize}] mb-[30px] flex items-center justify-center`}
+      } w-[${width}] ml-[${marginLeft}] h-[${height}] rounded-[${radius}] mx-[${marginX}] bg-[${bg}] text-center text-[${color}] text-[${fontSize}] mb-[30px] flex items-center justify-center`}
     >
       <NavLink to={navigationTo}> {children}</NavLink>
     </div>

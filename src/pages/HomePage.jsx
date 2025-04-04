@@ -6,7 +6,7 @@ import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 function HomePage() {
   return (
     <div className="homePage-content">
-      <HeroSection />
+      {/* <HeroSection /> */}
 
       <OurServices />
 

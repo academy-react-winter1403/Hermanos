@@ -20,11 +20,7 @@ function CoursesPage() {
         />
       </div>
       <CoursesSlider />
-      <div className="course-slider mt-[80px] mx-[auto] w-[99%] flex flex-row gap-[40px] flex-nowrap justify-center mb-[100px] relative">
-        <CourseCard />
-        <CourseCard />
-        <CourseCard />
-      </div>
+
       <Button
         bg="rgba(18,146,108,1)"
         radius="51px"

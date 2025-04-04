@@ -43,14 +43,6 @@ const OurServices = () => {
   return (
     <div className="sevices-container">
       <div className="py-16 mx-[30px] bg-white">
-        <h2 className="text-center text-3xl font-bold mb-[15px] text-[rgba(34,68,93,1)]">
-          خدمات ما
-        </h2>
-        {/* <p className="text-center text-[rgba(34,68,93,1)] "> */}
-        {/* <h2 className="text-center text-3xl font-bold mb-[15px]">خدمات ما</h2>
-        <p className="text-center ">
-          ما فرصت آماده شدن برای زندگی را فراهم می کنیم
-        </p> */}
         <SectionTitle
           title="خدمات ما"
           description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
