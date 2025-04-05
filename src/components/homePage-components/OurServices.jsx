@@ -1,65 +1,19 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
+import Servise from "./Servise";
 
 const OurServices = () => {
-  const services = [
-    {
-      title: "اساتید مجرب",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/figure-svgrepo-com.svg",
-    },
-    {
-      title: "مشاوره رایگان",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/",
-    },
-    {
-      title: "فرصت های شغلی",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/map-svgrepo-com.svg",
-    },
-    {
-      title: "ارائه مدرک معتبر",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/office-svgrepo-com.svg",
-    },
-    {
-      title: "دوره های جامع و متنوع",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/analyze-svgrepo-com.svg",
-    },
-    {
-      title: "آموزش پروژه محور",
-      description:
-        "لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه دهندگان وب، تایپوگراف ها و طراحان استفاده می شود ",
-      icon: "/images/project-svgrepo-com.svg",
-    },
-  ];
   return (
-    <div className="sevices-container">
-      <div className="py-16 mx-[30px] bg-white">
-        <SectionTitle
-          title="خدمات ما"
-          description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
-        />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-15 mt-15 px-35 ">
-          {services.map((service, index) => (
-            <div key={index} className="p-6  rounded-lg text-end shadow-md">
-              <img src={service.icon} alt="" className="ml-[140px] " />
-              <h3 className="text-lg font-semibold mt-4">{service.title}</h3>
-              <p className="text-gray-600 mt-2 text-sm">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
+    <>
+      <SectionTitle
+        title="خدمات ما"
+        description="ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
+        titleClass="mb-[10px] mt-[70px]"
+      />
+      <div className="sevices-container  w-[90%] mx-[auto] flex flex-row flex-wrap gap-[30px] justify-center mt-[90px]">
+        <Servise />
       </div>
-    </div>
+    </>
   );
 };
 

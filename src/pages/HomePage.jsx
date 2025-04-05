@@ -1,13 +1,9 @@
-import { Outlet } from "react-router-dom";
-import HeroSection from "../components/homePage-components/HeroSection";
 import OurServices from "../components/homePage-components/OurServices";
 import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 
 function HomePage() {
   return (
     <div className="homePage-content">
-      {/* <HeroSection /> */}
-
       <OurServices />
 
       {/* Statistics */}

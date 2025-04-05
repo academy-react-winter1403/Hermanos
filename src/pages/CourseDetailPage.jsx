@@ -5,11 +5,12 @@ import CourseDetailDesc from "../components/courseDetail-components/CourseDetail
 import CourseDetailSugesstion from "../components/courseDetail-components/CourseDetailSugesstion";
 import CourseDetailVideo from "../components/courseDetail-components/CourseDetailVideo";
 import FirstCourseInfo from "../components/courseDetail-components/FirstCourseInfo";
+import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 
 function CourseDetailPage() {
   return (
     <>
-      <div className="course-details w-[100%] flex flex-row flex-nowrap gap-[20px] mt-[100px] justify-center">
+      <div className="course-details w-[100%] flex flex-row flex-nowrap gap-[20px] mt-[100px] justify-center mb-[80px]">
         <div className="detail-left w-[450px] rounded-[30px] bg-[rgba(251,246,246,1)] p-[30px]">
           <div className="course-info1 p-[20px] w-[100%] bg-[rgba(255,255,255,1)] rounded-[26px] mb-[25px]">
             <FirstCourseInfo asking="مدرس دوره" answering="نام استاد" />
@@ -34,13 +35,7 @@ function CourseDetailPage() {
             <FirstCourseInfo asking="شروع دوره" answering="1402/07/06" />
             <FirstCourseInfo asking="پایان دوره" answering="1402/07/06" />
           </div>
-          <Button
-            bg="rgba(91,225,185,1)"
-            width="70%"
-            height="35px"
-            fontSize="13px"
-            radius="15px"
-          >
+          <Button style="bg-[rgba(91,225,185,1)] h-[40px] w-[50%] leading-[36px] mb-[60px] mx-[auto] text-[13px] rounded-[13px]">
             رزرو دوره
           </Button>
           <div className="about-teacher p-[20px] w-[100%] bg-[rgba(255,255,255,1)] rounded-[26px] mb-[25px]">
@@ -62,6 +57,14 @@ function CourseDetailPage() {
           <CourseDetailVideo />
           <CourseDetailSugesstion />
         </div>
+      </div>
+      <SectionTitle
+        title="دوره های مشابه"
+        description="ساختن دنیایی بهتر، یک دوره در یک زمان"
+        titleClass="text-[26px] mb-[10px]"
+      />
+      <div className="mt-[80px]">
+        <CoursesSlider />
       </div>
     </>
   );

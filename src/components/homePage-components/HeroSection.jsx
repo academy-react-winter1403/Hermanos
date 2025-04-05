@@ -14,14 +14,8 @@ const HeroSection = () => {
           فوتوشاپ استفاده می کنند.
         </p>
         <Button
-          height="50px"
-          marginX="start"
-          marginLeft="auto"
-          width="150px"
-          radius="51px"
-          bg="rgba(18,146,108,1)"
-          fontSize="14px"
-          color="rgb(255, 255, 255)"
+          navigationTo="/"
+          style="border w-[150px] h-[60px] border-[2px] border-[rgba(18,146,108,1)] text-[rgba(255,255,255,1)] bg-[rgba(18,146,108,1)] ml-[auto] text-center leading-[50px] rounded-[51px]"
         >
           شروع یادگیری
         </Button>

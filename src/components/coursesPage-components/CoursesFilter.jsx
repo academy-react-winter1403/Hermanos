@@ -71,7 +71,10 @@ function CoursesFilter() {
             </div>
           </div>
         </div>
-        <div className="collapse collapse-arrow join-item border-base-300 border">
+        <div
+          className="collapse collapse-arrow join-item border-base-300 border"
+          style={{ direction: "rtl" }}
+        >
           <input type="radio" name="my-accordion-4" />
           <div className="collapse-title font-semibold">سطح دوره</div>
           <div className="collapse-content text-sm">

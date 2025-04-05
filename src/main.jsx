@@ -18,6 +18,8 @@ import LoginTwoStep from "./components/loginPage-components/LoginTwoStep.jsx";
 import RegisterStepOne from "./components/signUpPage-components/RegisterStepOne.jsx";
 import RegisterStepTwo from "./components/signUpPage-components/RegisterStepTwo.jsx";
 import RegisterStepThree from "./components/signUpPage-components/RegisterStepThree.jsx";
+import Sugesstion from "./components/courseDetail-components/Sugesstion.jsx";
+import UserSugesstion from "./components/courseDetail-components/UserSugesstion.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,17 @@ const router = createBrowserRouter([
       {
         path: "/courses/:id",
         element: <CourseDetailPage />,
+        children: [
+          {
+            index: true,
+            path: "/courses/:id/sign-opinion",
+            element: <Sugesstion />,
+          },
+          {
+            path: "/courses/:id/users-opinion",
+            element: <UserSugesstion />,
+          },
+        ],
       },
       {
         path: "/news",

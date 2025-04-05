@@ -17,28 +17,12 @@ import React from "react";
 //   );
 // };
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Button({
-  children,
-  bg = "",
-  fontSize = "18px",
-  width,
-  height,
-  radius,
-  borderColor,
-  marginX = "auto",
-  navigationTo,
-  marginLeft,
-  color,
-}) {
+function Button({ children, navigationTo, style, onClick }) {
   return (
-    <div
-      className={`${
-        borderColor ? `border border-[${borderColor}]` : ""
-      } w-[${width}] ml-[${marginLeft}] h-[${height}] rounded-[${radius}] mx-[${marginX}] bg-[${bg}] text-center text-[${color}] text-[${fontSize}] mb-[30px] flex items-center justify-center`}
-    >
-      <NavLink to={navigationTo}> {children}</NavLink>
+    <div className={`text-center ${style}`} onClick={onClick}>
+      <Link to={navigationTo}> {children}</Link>
     </div>
   );
 }

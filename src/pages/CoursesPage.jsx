@@ -9,25 +9,20 @@ import Button from "../components/common/Button";
 function CoursesPage() {
   return (
     <div>
-      <div className="main-courses mt-[80px] mx-[auto] gap-[10px] w-[95%] flex flex-wrap flex-row justify-center">
-        <SectionTitle title="لیست دوره ها  " />
+      <div className="main-courses mb-[40px] mt-[80px] mx-[auto] gap-[10px] w-[95%] flex flex-wrap flex-row justify-center">
+        <SectionTitle title="لیست دوره ها  " titleClass="mb-[40px]" />
         <MainCoursesSearch />
         <CoursesHolder />
         <CoursesFilter />
         <SectionTitle
           title=" دوره های برتر "
           description="ساختن دنیایی بهتر، یک دوره در یک زمان"
+          titleClass="mb-[10px]"
         />
       </div>
       <CoursesSlider />
 
-      <Button
-        bg="rgba(18,146,108,1)"
-        radius="51px"
-        width="250px"
-        height="45px"
-        lineHeight="40px"
-      >
+      <Button style="mx-[auto] mt-[70px] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[350px] h-[90px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[20px] leading-[80px] bg-[rgba(18,146,108,1)]">
         مشاهده دوره های بیشتر
       </Button>
     </div>

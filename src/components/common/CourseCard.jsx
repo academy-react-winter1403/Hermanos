@@ -50,21 +50,11 @@ function CourseCard() {
           </div>
         </div>
         <div className="course-btns mt-[15px] w-[87%] h-[45px] mx-[auto] gap-[5px] flex flex-row flex-nowrap justify-between">
-          <Button
-            className="course-reserve"
-            width="50%"
-            height="100%"
-            bg="rgba(91,225,185,1)"
-            radius="12px"
-          >
+          <Button style="w-[50%] h-[100%] rounded-[12px] bg-[rgba(91,225,185,1)] text-center leading-[38px]">
             رزرو دوره
           </Button>
           <Button
-            className="course-reserve"
-            width="50%"
-            height="100%"
-            radius="12px"
-            borderColor="rgba(91,225,185,1)"
+            style="w-[50%] h-[100%] rounded-[12px] border border-[rgba(91,225,185,1)] text-center leading-[38px]"
             navigationTo="/courses/:id"
           >
             جزییات دوره
