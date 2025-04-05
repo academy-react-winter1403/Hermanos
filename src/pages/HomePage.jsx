@@ -1,15 +1,19 @@
 import OurServices from "../components/homePage-components/OurServices";
-import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
+import HeroStatistics from "../components/homePage-components/HeroStatistics";
+import Category from "../components/homePage-components/Category";
+import OurCourses from "../components/homePage-components/OurCourses";
+import OurProfessionals from "../components/homePage-components/OurProfessionals";
 
 function HomePage() {
   return (
     <div className="homePage-content">
       <OurServices />
 
-      {/* Statistics */}
+      <HeroStatistics />
 
-      <div className="statistics-box flex flex-row rounded-3xl bg-[rgba(91,225,185,1)] w-[90%] h-[300px] mx-auto my-[50px]"></div>
-      <CoursesSlider />
+      <Category />
+      <OurCourses />
+      <OurProfessionals />
     </div>
   );
 }
