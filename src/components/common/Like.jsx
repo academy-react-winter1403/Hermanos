@@ -1,36 +1,35 @@
 import React from "react";
+import LikeIcon from "./LikeIcon";
+import DisLikeIcon from "./DisLikeIcon";
+import StarMark from "./StarMark";
+import { useLocation } from "react-router-dom";
+import FlashBackIcon from "./FlashBackIcon";
 
 function Like() {
+  const location = useLocation();
+  console.log(location);
   return (
-    <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-between">
-      <div className="like w-[25px] h-[100%]">
-        <img
-          src="/images/Path 1703.svg"
-          alt=""
-          className="like-icon block w-[100%] h-[55%]"
-        />
-        <span className="like-count text-[10px] block text-center leading-[20px]">
-          3
-        </span>
-      </div>
-      <div className="dislike w-[25px] h-[100%]">
-        <img
-          src="/images/Path 1704.svg"
-          alt=""
-          className="dislike-icon block w-[100%] h-[55%]"
-        />
-        <span className="like-count text-[10px] block text-center leading-[20px]">
-          5
-        </span>
-      </div>
-      <div className="star-mark w-[25px] h-[100%]">
-        <img
-          src="/images/Path 1705.svg"
-          alt=""
-          className="like-icon block w-[100%] h-[55%]"
-        />
-      </div>
-    </div>
+    <>
+      {location.pathname === "/news/:id/user-opinion" ? (
+        <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-between">
+          <FlashBackIcon />
+          <DisLikeIcon />
+          <LikeIcon />
+        </div>
+      ) : location.pathname === "/courses/:id/users-opinion" ? (
+        <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-between">
+          <FlashBackIcon />
+          <DisLikeIcon />
+          <LikeIcon />
+        </div>
+      ) : (
+        <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-between">
+          <LikeIcon />
+          <DisLikeIcon />
+          <StarMark />
+        </div>
+      )}
+    </>
   );
 }
 

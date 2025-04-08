@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 
-const CoursesSlider = () => {
+const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
   const SwiperStyle = {
     display: "flex",
     flexFlow: "row",
@@ -29,34 +29,34 @@ const CoursesSlider = () => {
         className="mySwiper h-[100%]"
       >
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          {sliderElement}
+          {sliderElement}
+          {sliderElement}
         </SwiperSlide>
       </Swiper>
     </div>

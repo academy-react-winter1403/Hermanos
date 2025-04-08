@@ -55,7 +55,12 @@ function CourseDetailPage() {
           </div>
           <CourseDetailDesc />
           <CourseDetailVideo />
-          <CourseDetailSugesstion />
+          <CourseDetailSugesstion
+            signTo="/courses/:id/sign-opinion"
+            userTo="/courses/:id/users-opinion"
+            holderStyle="w-[1000px] mt-[20px] rounded-[30px] pb-[30px] pt-[30px] bg-[rgba(255,255,255,1)] px-[70px]"
+            btnStyle="mb-[50px] w-[100%] h-[100px] rounded-[15px] flex flex-row flex-nowrap justify-center"
+          />
         </div>
       </div>
       <SectionTitle

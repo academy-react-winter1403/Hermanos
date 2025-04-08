@@ -10,7 +10,7 @@ const OurServices = () => {
         description="ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
         titleClass="mb-[10px] mt-[70px]"
       />
-      <div className="sevices-container  w-[90%] mx-[auto] flex flex-row flex-wrap gap-[30px] justify-center mt-[90px]">
+      <div className="sevices-container  w-[90%] mx-[auto] flex flex-row flex-wrap gap-[30px] justify-center mt-[90px] mb-[100px]">
         <Servise />
       </div>
     </>

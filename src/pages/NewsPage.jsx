@@ -2,13 +2,16 @@ import { Outlet } from "react-router-dom";
 import NewsCard from "../components/newsPage-components/NewsCard";
 import MainCoursesSearch from "../components/coursesPage-components/MainCoursesSearch";
 import Pagination from "../components/common/Pagination";
+import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
+import Button from "../components/common/Button";
+import SectionTitle from "../components/common/SectionTitle";
 
 function NewsPage() {
   return (
     <div className="mx-7">
       <Outlet />
       <MainCoursesSearch />
-      <div className="newsContainer border flex flex-wrap justify-center rounded-2xl mt-5 mb-5 ">
+      <div className="newsContainer border border-[1px] border-[rgba(239,239,239,1)] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] flex flex-wrap justify-center rounded-2xl mt-5 mb-5 ">
         <div className="holder p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 drop-shadow-xl mb-3">
           {[...Array(6)].map(() => (
             <NewsCard />
@@ -16,19 +19,17 @@ function NewsPage() {
         </div>
         <Pagination />
       </div>
-      <div className="mb-15">
-        <h2 className="text-center text-3xl font-bold mb-[15px] text-[rgba(34,68,93,1)]">
-          اخبار و مقالات مشابه
-        </h2>
-        <p className="text-center text-[rgba(34,68,93,1)] ">
-          ساختن دنیایی بهتر، یک دوره در یک زمان
-        </p>
-      </div>
-      <div className="newsSliderHolder flex flex-row-wrap grow-3 items-center overflow-hidden border mb-15 ">
-        {[...Array(3)].map(() => (
-          <NewsCard />
-        ))}
-      </div>
+      <SectionTitle
+        title="اخبار و مقالات مشابه"
+        titleClass="mt-[60px]"
+        description="ساختن دنیایی بهتر، یک دوره در یک زمان"
+        customClass="mb-[45px]"
+      />
+
+      <CoursesSlider sliderElement={<NewsCard />} />
+      <Button style="mx-[auto] mt-[70px] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[350px] h-[90px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[20px] leading-[80px] bg-[rgba(18,146,108,1)]">
+        مشاهده مقالات بیشتر
+      </Button>
     </div>
   );
 }

@@ -54,6 +54,7 @@ const Category = () => {
       <SectionTitle
         title="دسته بندی"
         description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
+        customClass="mb-[30px] mt-[90px]"
       />
       <div className="flex justify-center gap-6 p-10 flex-wrap my-auto">
         {courses.map((course) => (
