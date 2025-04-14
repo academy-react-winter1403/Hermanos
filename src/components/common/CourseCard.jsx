@@ -1,5 +1,7 @@
 import Button from "./Button";
 import React from "react";
+import Like from "./Like";
+import CourseReusableTeacher from "./CourseReusableTeacher";
 
 function CourseCard() {
   return (
@@ -9,35 +11,7 @@ function CourseCard() {
       </div>
       <div className="course-card-body h-[485px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[10px_10px_10px_0px_rgba(0,0,0,0.16)]">
         <div className="course-status mx-[auto] mt-[90px] h-[40px] w-[87%] flex flex-row flex-nowrap justify-between items-center">
-          <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-center">
-            <div className="like w-[33%] h-[100%]">
-              <img
-                src="/images/Path 1703.svg"
-                alt=""
-                className="like-icon block w-[100%] h-[55%]"
-              />
-              <span className="like-count text-[10px] block text-center leading-[20px]">
-                3
-              </span>
-            </div>
-            <div className="dislike w-[33%] h-[100%]">
-              <img
-                src="/images/Path 1704.svg"
-                alt=""
-                className="dislike-icon block w-[100%] h-[55%]"
-              />
-              <span className="like-count text-[10px] block text-center leading-[20px]">
-                5
-              </span>
-            </div>
-            <div className="star-mark w-[33%] h-[100%]">
-              <img
-                src="/images/Path 1705.svg"
-                alt=""
-                className="like-icon block w-[100%] h-[55%]"
-              />
-            </div>
-          </div>
+          <Like />
           <div className="course-status-btn h-[95%] w-[100px] text-center text-[11px] leading-[33px] rounded-[12px] bg-[rgba(191,244,228,1)] text-[rgba(21,139,104,1)]">
             وضعیت دوره
           </div>
@@ -58,18 +32,7 @@ function CourseCard() {
               4.8
             </div>
           </div>
-          <div className="course-teacher w-[95px] h-[100%] flex flex-row flex-nowrap">
-            <div className="teacher-name w-[70%] h-[100%] text-[12px] leading-[25px] text-[rgba(140,159,154,1)]">
-              جان اسمیت
-            </div>
-            <div className="teacher-pic w-[30%] h-[100%]">
-              <img
-                src="/images/Front-End-developer-profile-picture.svg"
-                alt=""
-                className="teacher-image w-[100%] h-[100%]"
-              />
-            </div>
-          </div>
+          <CourseReusableTeacher />
         </div>
         <p className="speach-time mt-[15px] block mx-[auto] text-[9px] w-[87%] text-end text-[rgba(65,167,137,1)]">
           سخنرانی (120ساعت)50
@@ -87,21 +50,11 @@ function CourseCard() {
           </div>
         </div>
         <div className="course-btns mt-[15px] w-[87%] h-[45px] mx-[auto] gap-[5px] flex flex-row flex-nowrap justify-between">
-          <Button
-            className="course-reserve"
-            width="50%"
-            height="100%"
-            bg="rgba(91,225,185,1)"
-            radius="12px"
-          >
+          <Button style="w-[50%] h-[100%] rounded-[12px] bg-[rgba(91,225,185,1)] text-center leading-[38px]">
             رزرو دوره
           </Button>
           <Button
-            className="course-reserve"
-            width="50%"
-            height="100%"
-            radius="12px"
-            borderColor="rgba(91,225,185,1)"
+            style="w-[50%] h-[100%] rounded-[12px] border border-[rgba(91,225,185,1)] text-center leading-[38px]"
             navigationTo="/courses/:id"
           >
             جزییات دوره

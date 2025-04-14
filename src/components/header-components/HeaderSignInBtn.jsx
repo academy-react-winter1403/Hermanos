@@ -5,10 +5,10 @@ import { BsSearch } from "react-icons/bs";
 function HeaderSignInBtn() {
   return (
     <div className="signin-container w-[150px] h-[70%] flex flex-nowrap flex-row ml-[20px]">
-      <div className="sign-in-btn border rounded-md w-[75%] h-[100%] ">
+      <div className="sign-in-btn rounded-md bg-[rgba(0,223,157,1)] w-[75%] h-[100%] ">
         <Link
           to="/login"
-          className="px-[20px] py-[5px] my-[auto] mt-[3px] text-[12px] block text-center"
+          className="px-[20px] py-[7px] my-[auto] text-[12px] block text-center"
         >
           ورود/ثبت نام
         </Link>
