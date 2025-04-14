@@ -24,7 +24,7 @@ function AboutUsPage() {
               18:00
             </p>
           </div>
-          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[10px_10px_5px_0pxrgba(0,0,0,0.16)]">
+          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[8px_8px_5px_0px_rgba(0,0,0,0.16)]">
             <img
               src="/images/Path 1902.svg"
               className="w-[45%] h-[45%] mx-[auto] mt-[28px]"
@@ -39,7 +39,7 @@ function AboutUsPage() {
               011-33883358
             </p>
           </div>
-          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[10px_10px_5px_0pxrgba(0,0,0,0.16)]">
+          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[8px_8px_5px_0px_rgba(0,0,0,0.16)]">
             <img
               src="/images/Path 1903.svg"
               className="w-[45%] h-[45%] mx-[auto] mt-[28px]"
@@ -54,7 +54,7 @@ function AboutUsPage() {
               bahr_academy@gmail.com
             </p>
           </div>
-          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[10px_10px_5px_0pxrgba(0,0,0,0.16)]">
+          <div className=" w-[25%] h-[100%] bg-[rgba(251,246,246,1)] rounded-[15px] shadow-[8px_8px_5px_0px_rgba(0,0,0,0.16)]">
             <img
               src="/images/Path 1904.svg"
               className="w-[45%] h-[45%] mx-[auto] mt-[28px]"

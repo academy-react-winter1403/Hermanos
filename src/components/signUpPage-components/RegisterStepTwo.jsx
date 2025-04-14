@@ -17,9 +17,9 @@ const RegisterStepTwo = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
-      <div className="holder flex flex-row-reverse h-[80%] w-[70%] drop-shadow-xl ">
+      <div className="holder flex flex-row-reverse h-[75%] w-[70%] rounded-2xl shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] ">
         <div className="bg-[rgba(251,246,246,1)] rounded-r-xl  p-8 w-[50%] h-[100%]">
-          <h2 className="text-[rgba(34,68,93,1)] text-2xl font-bold mb-10 mt-20 text-end">
+          <h2 className="text-[rgba(34,68,93,1)] text-3xl font-medium mb-10 mt-20 text-end">
             ثبت نام
           </h2>
           <Formik
@@ -30,7 +30,7 @@ const RegisterStepTwo = () => {
             <Form>
               <div className="mb-4 ">
                 <Field
-                  className="text-end border bg-white h-[50px] rounded-lg w-full mb-16 py-2 px-3 text-[rgba(171,167,167,1)] hover:border-[rgba(21,139,104,1)]"
+                  className="text-end border-2  bg-white h-[60px] rounded-lg w-full mb-16 py-2 px-3 text-[rgba(171,167,167,1)] border-[rgba(21,139,104,1)]"
                   type="phoneNumber"
                   name="phoneNumber"
                   placeholder="کد تایید"
@@ -42,53 +42,19 @@ const RegisterStepTwo = () => {
                 />
               </div>
 
-              {/* <div className="mb-4">
-                  <Field
-                    className="border bg-white text-end h-[50px] rounded-lg w-full py-2 px-3 text-[rgba(171,167,167,1)] hover:border-[rgba(21,139,104,1)]"
-                    type="password"
-                    name="password"
-                    placeholder="رمز عبور"
-                  />
-                  <ErrorMessage
-                    name="password"
-                    component="div"
-                    className="text-end mt-2 text-red-500"
-                  />
-                </div> */}
-              {/* <label className="block text-end my-5 text-[rgba(34,68,93,1)] text-sm">
-                  مرا به خاطر بسپار
-                  <input className="ml-2 " type="checkbox" />
-                </label> */}
               <button
                 type="submit"
-                className="bg-[rgba(21,139,104,1)] h-[50px] text-white font-bold py-2 px-4 rounded-lg w-full"
+                className="bg-[rgba(21,139,104,1)] h-[60px] text-white font-bold py-2 px-4 rounded-lg w-full"
               >
                 ادامه
               </button>
               <button
                 onClick={previousPage}
-                className="bg-white border h-[50px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-4"
+                className="bg-white border-2 border-[rgba(21,139,104,1)] h-[60px] text-[rgba(34,68,93,1)] font-bold py-2 px-4 rounded-lg w-full mt-4"
               >
                 بازگشت به صفحه قبل
               </button>
-              <p className="mt-6 text-end">
-                {/* <span>
-                  <Link
-                    to="/sign-up"
-                    className="text-[rgba(34,68,93,1)] underline text-sm"
-                  >
-                    من از قبل عضو هستم
-                  </Link>
-                </span> */}
-                {/* <span>
-                    <Link
-                      to="/login/forget-password"
-                      className="text-[rgba(34,68,93,1)] underline"
-                    >
-                      فراموشی رمز
-                    </Link>
-                  </span> */}
-              </p>
+              <p className="mt-6 text-end"></p>
             </Form>
           </Formik>
         </div>

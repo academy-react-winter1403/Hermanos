@@ -20,6 +20,7 @@ import RegisterStepTwo from "./components/signUpPage-components/RegisterStepTwo.
 import RegisterStepThree from "./components/signUpPage-components/RegisterStepThree.jsx";
 import Sugesstion from "./components/courseDetail-components/Sugesstion.jsx";
 import UserSugesstion from "./components/courseDetail-components/UserSugesstion.jsx";
+import NewPassWordForm from "./components/loginPage-components/NewPassWordForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,12 @@ const router = createBrowserRouter([
       {
         path: "/login/forget-password",
         element: <ForgetPassPage />,
+        children: [
+          {
+            path: "/login/forget-password/new-password",
+            element: <NewPassWordForm />,
+          },
+        ],
       },
     ],
   },

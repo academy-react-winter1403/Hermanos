@@ -9,12 +9,8 @@ function NewsDetailPage() {
   return (
     <>
       <div className="rounded-[40px] w-[80%] mx-[auto] mt-[100px] bg-[rgba(251,246,246,1)]">
-        <div className="news-detail-pic w-[700px] h-[450px] border mx-[auto]">
-          <img
-            src="/images/Background Complete.svg"
-            alt=""
-            className="w-[100%] h-[100%]"
-          />
+        <div className="news-detail-pic w-[700px] h-[450px] mx-[auto]">
+          <img src="/images/6101071.svg" alt="" className="w-[100%] h-[100%]" />
         </div>
         <NewsTopic />
         <CourseDetailSugesstion

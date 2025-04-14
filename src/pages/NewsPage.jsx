@@ -11,7 +11,7 @@ function NewsPage() {
     <div className="mx-7">
       <Outlet />
       <MainCoursesSearch />
-      <div className="newsContainer border border-[1px] border-[rgba(239,239,239,1)] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] flex flex-wrap justify-center rounded-2xl mt-5 mb-5 ">
+      <div className="newsContainer border border-[rgba(239,239,239,1)] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] flex flex-wrap justify-center rounded-2xl mt-5 mb-5 ">
         <div className="holder p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 drop-shadow-xl mb-3">
           {[...Array(6)].map(() => (
             <NewsCard />

@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="w-[100%] h-[250px] mt-[50px] bg-[rgba(164,246,222,1)] py-8 text-gray-800 text-center">
+    <footer className="w-[100%] h-[270px] mt-[50px] bg-[rgba(164,246,222,1)] py-8 text-gray-800 text-center">
       <div className="container mx-auto px-6">
         {/* Footer Top */}
         <div className=" h-[150px] flex flex-row-reverse gap-80 text-center md:text-right">
@@ -44,11 +44,11 @@ function Footer() {
           </div>
         </div>
         {/* Footer Bottom  */}
-        <div className="w-[100%] h-[100px] border-t  border-gray-400 my-6">
+        <div className="w-[100%] h-[100px] border-t  border-gray-400 my-6 ">
           <div className="flex flex-row-nowrap justify-center space-x-4 mb-4"></div>
           <p className="my-[-10px]  text-gray-600 text-end">
             &copy;.کلیه حقوق این وب سایت برای آکادمی اچ وان محفوظ است
-          </p>{" "}
+          </p>
           {/* Social Media Icons */}
           <span className="text-2xl cursor-pointer"></span>
           <span className="text-2xl cursor-pointer"></span>

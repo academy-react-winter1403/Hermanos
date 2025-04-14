@@ -4,7 +4,7 @@ import NewsInformation from "./NewsInformation";
 
 function NewsTopic() {
   return (
-    <div className="news-topic border border-[rgba(239,239,239,1)] w-[95%] mx-[auto] mt-[25px] bg-[rgba(255,255,255,1)] rounded-[37px] flex flex-col items-center">
+    <div className="news-topic border border-[rgba(239,239,239,1)] w-[95%] mx-[auto] mt-[25px] bg-[rgba(255,255,255,1)] rounded-[37px] flex flex-col items-center shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)]">
       <SectionTitle title="عنوان مقاله" titleClass="mt-[25px] mb-[30px]" />
       <p className="w-[95%] text-[17px] text-end">
         لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
