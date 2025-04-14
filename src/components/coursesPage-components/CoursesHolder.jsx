@@ -1,13 +1,56 @@
 import React from "react";
 import CourseCard from "../common/CourseCard";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination } from "swiper/modules";
 
 function CoursesHolder() {
+  const SwiperStyle = {
+    display: "flex",
+    flexWrap: "wrap",
+    flexDirection: "row",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+    gap: "30px",
+  };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
   return (
-    <div className="main-courses-slider mb-[80px] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[75%] rounded-[37px] gap-[40px] flex flex-row flex-wrap justify-center items-center">
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
-      <CourseCard />
+    <div className="main-courses-slider mb-[80px] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[75%] h-[1300px] rounded-[37px] gap-[40px]">
+      <Swiper
+        pagination={pagination}
+        modules={[Pagination]}
+        className="mySwiper h-[100%]"
+      >
+        <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </SwiperSlide>
+      </Swiper>
     </div>
   );
 }

@@ -14,8 +14,8 @@ import { Navigation } from "swiper/modules";
 const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
   const SwiperStyle = {
     display: "flex",
-    flexFlow: "row",
-    flexDirection: "nowrap",
+    flexwrap: "nowrap",
+    flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
     gap: "50px",
