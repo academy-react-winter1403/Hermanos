@@ -78,7 +78,7 @@ function CourseCard() {
           لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
           دهندگان وب، تایپوگراف ها و طراحان استفاده می شود
         </p>
-        <div className="course-price mt-[15px] border-t pt-[7px] border-t-[rgba(18,146,108,1)] mt-[10px] h-[35px] w-[87%] mx-[auto] flex flex-row flex-nowrap justify-center items-center">
+        <div className="course-price mt-[25px] border-t pt-[7px] border-t-[rgba(18,146,108,1)]  h-[35px] w-[87%] mx-[auto] flex flex-row flex-nowrap justify-center items-center">
           <div className="price w-[50%] h-[80%] text-[rgba(225,24,24,1)] text-[18px]">
             تومان 3,000,000
           </div>
