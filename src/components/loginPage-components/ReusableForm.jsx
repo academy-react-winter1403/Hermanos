@@ -19,7 +19,7 @@ const ReusableForm = () => {
 
   return (
     <div className="flex justify-center items-center h-screen bg-white ]">
-      <div className="holder  flex flex-row-reverse h-[75%] w-[70%] rounded-2xl shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)]">
+      <div className="holder  flex flex-row-reverse w-[70%] rounded-2xl shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)]">
         <div className="bg-[rgba(251,246,246,1)] rounded-r-xl  p-8 w-[50%] h-[100%]">
           <h2 className="text-[rgba(34,68,93,1)] text-3xl font-medium mb-15 mt-10 text-end">
             ورود به سیستم
@@ -78,7 +78,7 @@ const ReusableForm = () => {
                   <span className="ml-21">
                     <Link
                       to="/sign-up"
-                      className="text-[rgba(34,68,93,1)] underline text-sm ml-23 "
+                      className="text-[rgba(34,68,93,1)] underline text-sm ml-18 "
                     >
                       یک حساب کاربری ایجاد کنید
                     </Link>
@@ -96,12 +96,8 @@ const ReusableForm = () => {
             </Form>
           </Formik>
         </div>
-        <div className="flex justify-center items-center rounded-l-xl w-[50%] h-[100%]  bg-[rgba(164,246,222,1)]">
-          <img
-            className="inline w-[80%] h-[60%]"
-            src="/images/verfy.svg"
-            alt=""
-          />
+        <div className="flex justify-center items-center rounded-l-xl w-[50%]  bg-[rgba(164,246,222,1)]">
+          <img className="inline w-[80%] " src="/images/verfy.svg" alt="" />
         </div>
       </div>
     </div>

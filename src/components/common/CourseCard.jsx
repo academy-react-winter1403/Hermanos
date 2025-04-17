@@ -5,8 +5,8 @@ import CourseReusableTeacher from "./CourseReusableTeacher";
 
 function CourseCard() {
   return (
-    <div className="course-card w-[350px] h-[550px] relative">
-      <div className="course-card-logo w-[150px] h-[160px] absolute left-[105px] z-10">
+    <div className="course-card w-[300px] h-[550px] relative">
+      <div className="course-card-logo w-[150px] h-[160px] absolute left-[80px] z-10">
         <img src="/images/icons8-angular.svg" alt="" />
       </div>
       <div className="course-card-body h-[485px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[10px_10px_10px_0px_rgba(0,0,0,0.16)]">

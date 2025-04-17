@@ -1,4 +1,81 @@
 import React from "react";
+import { Collapse } from "antd";
+import { useState } from "react";
+import { Input, Radio } from "antd";
+
+const style = {
+  display: "flex",
+  flexDirection: "column",
+  gap: 8,
+  direction: "rtl",
+  border: "1px solid rgba(91,225,185,1)",
+  borderRadius: "10px",
+  padding: "10px",
+};
+
+const InputRadio = () => {
+  const [value, setValue] = useState(1);
+  const onChange = (e) => {
+    setValue(e.target.value);
+  };
+  return (
+    <Radio.Group
+      buttonCheckedBg="rgba(91,225,185,1)"
+      style={style}
+      onChange={onChange}
+      value={value}
+      options={[
+        { value: 1, label: "حضوری" },
+        { value: 2, label: "آنلاین" },
+        { value: 3, label: "آنلاین-حضوری" },
+      ]}
+    />
+  );
+};
+
+const items = [
+  {
+    key: "1",
+    label: "تکنولوژی",
+    children: (
+      <div className="flex flex-col ltr">
+        <InputRadio />
+      </div>
+    ),
+  },
+  {
+    key: "2",
+    label: "نوع برگزاری",
+    children: (
+      <div className="flex flex-col ltr">
+        <InputRadio />
+      </div>
+    ),
+  },
+  {
+    key: "3",
+    label: "سطح دوره",
+    children: (
+      <div className="flex flex-col ltr">
+        <InputRadio />
+      </div>
+    ),
+  },
+];
+const CollapseFilter = () => {
+  const onChange = (key) => {
+    console.log(key);
+  };
+  return (
+    <Collapse
+      className="text-end "
+      bordered={false}
+      onChange={onChange}
+      items={items}
+    />
+  );
+};
+// export default App;
 
 function CoursesFilter() {
   return (
@@ -15,90 +92,8 @@ function CoursesFilter() {
           />
         </div>
       </div>
-      <div className="join join-vertical bg-base-100 w-[100%]">
-        <div className="collapse collapse-arrow join-item border-base-300 border">
-          <input
-            type="radio"
-            name="my-accordion-4"
-            defaultChecked
-            className="block"
-          />
-          <div className="collapse-title font-semibold">تکنولوژی</div>
-          <div className="collapse-content text-sm">
-            <div className="tec1-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="tec-input1"
-                className="radio radio-neutral"
-                defaultChecked
-              />
-              <label htmlFor="tec-input1">حضوری</label>
-            </div>
-            <div className="tec2-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="tec-input2"
-                className="radio radio-neutral"
-              />
-              <label htmlFor="tec-input2">آنلاین</label>
-            </div>
-          </div>
-        </div>
-        <div className="collapse collapse-arrow join-item border-base-300 border">
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title font-semibold">نوع برگزاری</div>
-          <div className="collapse-content text-sm">
-            <div className="kind1-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="kind-input1"
-                className="radio radio-neutral"
-                defaultChecked
-              />
-              <label htmlFor="kind-input1">حضوری</label>
-            </div>
-            <div className="kind2-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="kind-input2"
-                className="radio radio-neutral"
-              />
-              <label htmlFor="kind-input2">آنلاین</label>
-            </div>
-          </div>
-        </div>
-        <div
-          className="collapse collapse-arrow join-item border-base-300 border"
-          style={{ direction: "rtl" }}
-        >
-          <input type="radio" name="my-accordion-4" />
-          <div className="collapse-title font-semibold">سطح دوره</div>
-          <div className="collapse-content text-sm">
-            <div className="level1-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="level-input1"
-                className="radio radio-neutral"
-                defaultChecked
-              />
-              <label htmlFor="level-input1">حضوری</label>
-            </div>
-            <div className="level2-holder">
-              <input
-                type="radio"
-                name="radio-3"
-                id="level-input2"
-                className="radio radio-neutral"
-              />
-              <label htmlFor="level-input2">آنلاین</label>
-            </div>
-          </div>
-        </div>
+      <div className=" w-[100%] mt-[30px]">
+        <CollapseFilter />
       </div>
     </div>
   );
