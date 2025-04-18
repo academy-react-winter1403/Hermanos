@@ -42,7 +42,7 @@ function Servise() {
   return (
     <>
       {services.map((service) => (
-        <div className="w-[380px] h-[150px]  flex flex-row flex-nowrap">
+        <div className="w-[380px] h-[150px]  flex flex-row flex-nowrap ">
           <div className="service-desc-title  h-[100%] w-[280px] flex flex-col items-center justify-center gap-[5px]">
             <div className="service-title mt-[30px] w-[90%] h-[30px] text-end">
               {service.title}

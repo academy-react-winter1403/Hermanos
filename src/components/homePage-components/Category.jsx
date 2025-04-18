@@ -37,7 +37,7 @@ const Category = () => {
 
   const CategoryCard = ({ course }) => {
     return (
-      <div className="bg-white w-50 h-70 shadow-lg rounded-xl p-7  text-center flex flex-row flex-wrap justify-center">
+      <div className="bg-white w-50 h-70 shadow-xl rounded-xl p-7  text-center flex flex-row flex-wrap justify-center cursor-pointer transition-all hover:scale-110 hover:shadow-2xl">
         <img className="my-auto w-[50%]" src={course.icon} />
         <h2 className="text-md font-normal text-[rgba(34,68,93,1)] mt-2">
           {course.title}

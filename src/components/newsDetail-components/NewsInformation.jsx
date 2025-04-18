@@ -33,7 +33,7 @@ function NewsInformation() {
           </div>
         </div>
         <div className=" w-[110px] h-[100%] flex flex-row flex-nowrap justify-center items-center">
-          <div className=" w-[70%] h-[100%] text-center text-[11px] leading-[35px]">
+          <div className=" w-[70%] h-[100%] text-center text-[11px] leading-[35px] pl-[25px]">
             1124
           </div>
           <div className=" w-[25%] h-[60%]">

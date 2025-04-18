@@ -19,6 +19,7 @@ const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
     justifyContent: "center",
     alignItems: "center",
     gap: "50px",
+    m: "",
   };
 
   return (

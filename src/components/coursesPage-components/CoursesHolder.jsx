@@ -28,7 +28,7 @@ function CoursesHolder() {
   };
 
   return (
-    <div className="main-courses-slider mb-[80px] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[75%] h-[1300px] rounded-[37px] gap-[40px]">
+    <div className="main-courses-slider mb-[80px] shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[79%] h-[1300px] rounded-[37px] gap-[40px]">
       <Swiper
         pagination={pagination}
         modules={[Pagination]}
@@ -39,13 +39,17 @@ function CoursesHolder() {
           <CourseCard />
           <CourseCard />
           <CourseCard />
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          <CourseCard />
           <CourseCard />
           <CourseCard />
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
           <CourseCard />
           <CourseCard />
           <CourseCard />

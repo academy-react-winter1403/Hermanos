@@ -6,7 +6,7 @@ const NewsCard = (index) => {
   return (
     <div
       key={index}
-      className="mx-5 bg-white rounded-2xl drop-shadow-xl hover:transition-drop-shadow cursor-pointer"
+      className="mx-5 mb-3 bg-white rounded-2xl drop-shadow-xl  cursor-pointer hover:transition-all hover:scale-102  hover:drop-shadow-2xl "
     >
       <div className="newsImage">
         <span>
@@ -19,28 +19,18 @@ const NewsCard = (index) => {
       </div>
       <div className="flex flex-wrap justify-center m-4">
         <div className="newsStatus flex flex-row-reverse flex-nowrap w-[100%] h-[40px] mt-5 ">
-          <Button
-            className=""
-            width="40%"
-            height="98%"
-            radius="12px"
-            borderColor=""
-            navigationTo="/news/:id"
-            bg="rgba(91,225,185,1)"
-            textColor="rgba(21,139,104,1)"
-            fontSize="18px"
-          >
+          <Button style=" bg-[rgba(191,244,228,1)] pt-1 rounded-lg w-[120px] h-[35px] text-[rgba(21,139,104,1)] ">
             وضعیت مقاله
           </Button>
           <div className="h-[100%] w-[35%] "></div>
-          <div className=" flex flex-row flex-nowrap justify-center h-[98%] w-[25%]">
+          <div className=" flex flex-row flex-nowrap justify-center h-[80%] w-[25%] mr-[10px]">
             <div className="w-[33%] h-[100%]">
               <img
                 src="/images/Path 1703.svg"
                 alt=""
-                className="block w-[100%] h-[60%]"
+                className="block w-[75%] h-[60%]"
               />
-              <span className="block text-sm text-center text-[rgba(21,139,104,1)] leading-[20px]">
+              <span className="block text-sm text-center text-[rgba(21,139,104,1)] leading-[20px] mr-2">
                 12
               </span>
             </div>
@@ -48,9 +38,9 @@ const NewsCard = (index) => {
               <img
                 src="/images/Path 1704.svg"
                 alt=""
-                className="block w-[100%] h-[60%]"
+                className="block w-[75%] h-[60%]"
               />
-              <span className="block text-sm text-center text-[rgba(21,139,104,1)] leading-[20px]">
+              <span className="block text-sm text-center text-[rgba(21,139,104,1)] leading-[20px] mr-2">
                 6
               </span>
             </div>
@@ -58,7 +48,7 @@ const NewsCard = (index) => {
               <img
                 src="/images/Path 1705.svg"
                 alt=""
-                className="block w-[100%] h-[60%]"
+                className="block w-[75%] h-[60%]"
               />
             </div>
           </div>

@@ -32,11 +32,11 @@ const OurProfessionals = () => {
         description="ساختن دنیایی بهتر، یک دوره در یک زمان"
       />
 
-      <div className="flex flex-wrap justify-center px-4 my-auto">
+      <div className="flex flex-wrap justify-center px-4 my-auto gap-2">
         {professionals.map((member, index) => (
           <div
             key={index}
-            className="rounded-xl p-6 w-72 h-[100%] mt-6  text-center"
+            className=" rounded-xl p-6 w-72 h-[100%] mt-6  text-center hover:scale-110 "
           >
             <img
               src={member.image}

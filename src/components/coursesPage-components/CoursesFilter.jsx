@@ -79,7 +79,7 @@ const CollapseFilter = () => {
 
 function CoursesFilter() {
   return (
-    <div className="right-filter rounded-[37px] bg-[rgba(251,246,246,1)] shadow-[10px_10px_3px_0px_rgba(0,0,0,0.16)] mt-[10px] w-[23%] h-[500px]">
+    <div className="right-filter rounded-3xl bg-[rgba(251,246,246,1)] shadow-[7px_7px_10px_0px_rgba(0,0,0,0.16)] mt-[10px] ml-auto w-[18%] h-[500px]">
       <div className="right-filter-title mb-[20px] w-[80px] h-[30px] mx-[auto] mt-[20px] flex flex-row flex-nowrap items-center">
         <div className="filter-title w-[60%] h-[100%] text-[13px] text-center leading-[25px]">
           فیلترها

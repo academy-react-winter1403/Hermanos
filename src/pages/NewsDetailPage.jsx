@@ -26,7 +26,7 @@ function NewsDetailPage() {
         description="ساختن دنیایی بهتر، یک دوره در یک زمان"
       />
       <CoursesSlider sliderElement={<NewsCard />} />
-      <Button style="mx-[auto] mt-[70px] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[350px] h-[90px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[20px] leading-[80px] bg-[rgba(18,146,108,1)]">
+      <Button style="mx-[auto] mt-[70px] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
         مشاهده مقالات بیشتر
       </Button>
     </>
