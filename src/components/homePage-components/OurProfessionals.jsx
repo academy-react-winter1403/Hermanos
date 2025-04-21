@@ -32,7 +32,7 @@ const OurProfessionals = () => {
         description="ساختن دنیایی بهتر، یک دوره در یک زمان"
       />
 
-      <div className="flex flex-wrap justify-center px-4 my-auto gap-2">
+      <div className="flex flex-nowrap justify-center px-4 my-auto gap-2">
         {professionals.map((member, index) => (
           <div
             key={index}
