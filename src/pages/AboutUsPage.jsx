@@ -1,4 +1,4 @@
-import AboutUsForm from "../components/aboutUs-components/AboutUsForm";
+import AboutUsForm from "../components/aboutUsPage-components/AboutUsForm";
 import SectionTitle from "../components/common/SectionTitle";
 
 function AboutUsPage() {

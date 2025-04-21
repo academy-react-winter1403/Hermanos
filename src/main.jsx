@@ -21,6 +21,14 @@ import RegisterStepThree from "./components/signUpPage-components/RegisterStepTh
 import Sugesstion from "./components/courseDetail-components/Sugesstion.jsx";
 import UserSugesstion from "./components/courseDetail-components/UserSugesstion.jsx";
 import NewPassWordForm from "./components/loginPage-components/NewPassWordForm.jsx";
+import PanelPage from "./pages/PanelPage.jsx";
+import PanelEditProfilePage from "./pages/PanelEditProfilePage.jsx";
+import PanelCounterPage from "./pages/PanelCounterPage.jsx";
+import PanelMyCoursesPage from "./pages/PanelMyCoursesPage.jsx";
+import PanelReservedCourses from "./pages/PanelReservedCourses.jsx";
+import PanelFavoritePage from "./pages/PanelFavoritePage.jsx";
+import PanelMyOpinionPage from "./pages/PanelMyOpinionPage.jsx";
+import PanelChangePassPage from "./pages/PanelChangePassPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -119,6 +127,40 @@ const router = createBrowserRouter([
       {
         path: "/sign-up/step-three",
         element: <RegisterStepThree />,
+      },
+    ],
+  },
+  {
+    path: "/panel-student",
+    element: <PanelPage />,
+    children: [
+      {
+        path: "/panel-student/counter",
+        element: <PanelCounterPage />,
+      },
+      {
+        path: "/panel-student/edit-profile",
+        element: <PanelEditProfilePage />,
+      },
+      {
+        path: "/panel-student/my-courses",
+        element: <PanelMyCoursesPage />,
+      },
+      {
+        path: "/panel-student/reserved-courses",
+        element: <PanelReservedCourses />,
+      },
+      {
+        path: "/panel-student/favorites",
+        element: <PanelFavoritePage />,
+      },
+      {
+        path: "/panel-student/my-opinion",
+        element: <PanelMyOpinionPage />,
+      },
+      {
+        path: "/panel-student/change-pass",
+        element: <PanelChangePassPage />,
       },
     ],
   },
