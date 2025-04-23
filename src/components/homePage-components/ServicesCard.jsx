@@ -1,6 +1,7 @@
 import React from "react";
+import SectionTitle from "../common/SectionTitle";
 
-function Servise() {
+const ServicesCard = () => {
   const services = [
     {
       title: "اساتید مجرب",
@@ -42,22 +43,17 @@ function Servise() {
   return (
     <>
       {services.map((service) => (
-        <div className="w-[380px] h-[150px] hidden lg:flex flex-row flex-nowrap ">
-          <div className="service-desc-title  h-[100%] w-[280px] flex flex-col items-center justify-center gap-[5px]">
-            <div className="service-title mt-[30px] w-[90%] h-[30px] text-end">
-              {service.title}
-            </div>
-            <div className="service-desc  w-[90%] h-[80px] text-end text-[11px]">
-              {service.description}
-            </div>
-          </div>
-          <div className="servise-pic  h-[100%] w-[120px]">
+        <div className=" w-[80px] h-[150px] block lg:hidden ">
+          <div className="servise-pic  h-[70%] w-[100%] mx-auto">
             <img src={service.icon} alt="" className="w-[100%] h-[100%]" />
+          </div>
+          <div className="service-title w-[100%] h-[30%] text-center text-wrap text-xs font-bold">
+            {service.title}
           </div>
         </div>
       ))}
     </>
   );
-}
+};
 
-export default Servise;
+export default ServicesCard;

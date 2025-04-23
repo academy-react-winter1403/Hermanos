@@ -6,7 +6,7 @@ const NewsCard = (index) => {
   return (
     <div
       key={index}
-      className="mx-5 mb-3 bg-white rounded-2xl drop-shadow-xl  cursor-pointer hover:transition-all hover:scale-102  hover:drop-shadow-2xl "
+      className="mx-5 mb-3 bg-white w-[250px] xl:w-[300px] rounded-2xl drop-shadow-xl  cursor-pointer hover:transition-all hover:scale-102  hover:drop-shadow-2xl "
     >
       <div className="newsImage">
         <span>
@@ -19,7 +19,7 @@ const NewsCard = (index) => {
       </div>
       <div className="flex flex-wrap justify-center m-4">
         <div className="newsStatus flex flex-row-reverse flex-nowrap w-[100%] h-[40px] mt-5 ">
-          <Button style=" bg-[rgba(191,244,228,1)] pt-1 rounded-lg w-[120px] h-[35px] text-[rgba(21,139,104,1)] ">
+          <Button style=" bg-[rgba(191,244,228,1)] pt-1 rounded-lg w-[120px] h-[35px] text-[rgba(21,139,104,1)] text-sm lg:text-base my-auto ">
             وضعیت مقاله
           </Button>
           <div className="h-[100%] w-[35%] "></div>
@@ -53,19 +53,19 @@ const NewsCard = (index) => {
             </div>
           </div>
         </div>
-        <h1 className="mt-2 text-2xl mb-3 ">
+        <h1 className="mt-2 font-bold xl:text-xl mb-3 text-nowrap  ">
           آشنایی با برنامه نویسی با وردپرس
         </h1>
-        <div className="rateHolder w-[100%] h-[38px] mb-8 flex flex-row-reverse flex-nowrap">
-          <div className="w-[38%] flex flex-row-reverse flex-nowrap gap-[7px]">
-            <div className="h-[100%]">
+        <div className="rateHolder w-[100%] h-[38px] mb-6 flex flex-row-reverse flex-nowrap">
+          <div className="w-[47%] flex flex-row-reverse flex-nowrap gap-[7px]">
+            <div className="h-[100%] w-43 ">
               <img
                 src="/images/Front-End-developer-profile-picture.svg"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
             </div>
-            <div className="h-[100%] text-[17px] font-normal text-center text-[rgba(140,159,154,1)]">
+            <div className="h-[100%] text-sm xl:text-[17px] font-normal text-center text-nowrap text-[rgba(140,159,154,1)] my-1">
               جان اسمیت
             </div>
           </div>
@@ -81,7 +81,7 @@ const NewsCard = (index) => {
             <div className="h-[80%] text-xl text-[rgba(8,158,113,1)]">4.8</div>
           </div>
         </div>
-        <p className="text-[rgba(109,103,103,1)] text-[13px] mt-1 text-end">
+        <p className="text-[rgba(109,103,103,1)] text-xs lg:text-[13px] mt-1 text-end">
           لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
           دهندگان وب، تایپوگراف ها و طراحان استفاده می شود
         </p>
