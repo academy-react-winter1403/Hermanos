@@ -7,11 +7,11 @@ import HeaderSearchBox from "./HeaderSearchBox";
 
 function HeaderSignInBtn() {
   return (
-    <div className="signin-container lg:w-[150px] md:w-[50px] sm:w-[50px] lg:h-[50%] md:h-[40%] sm:h-[40%] flex flex-nowrap flex-row ml-[20px] gap-[10px]">
+    <div className="signin-container w-[50px] lg:w-[150px]  sm:w-[50px] h-[45%] md:h-[40%] sm:h-[40%] flex flex-nowrap flex-row sm:ml-[5px] ml-[20px] gap-[10px]">
       <div className="sign-in-btn rounded-md bg-[rgba(0,223,157,1)] w-[70%] h-[100%] my-auto md:my-1 sm:my-1 ">
         <Link
           to="/login"
-          className="py-[7px] text-[14px] lg:block md:hidden sm:hidden text-center"
+          className="py-[7px] text-[14px] lg:block hidden text-center"
         >
           ورود/ثبت نام
         </Link>

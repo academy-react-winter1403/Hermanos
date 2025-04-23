@@ -1,5 +1,6 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
+import CategorySlider from "./CategorySlider";
 
 const Category = () => {
   const courses = [
@@ -56,10 +57,13 @@ const Category = () => {
         description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
         customClass="mb-[30px] mt-[90px]"
       />
-      <div className="flex justify-center gap-6 p-10 flex-wrap my-auto">
+      <div className="hidden lg:flex justify-center gap-6 p-10 flex-wrap my-auto">
         {courses.map((course) => (
           <CategoryCard key={course.id} course={course} />
         ))}
+      </div>
+      <div className="flex lg:hidden justify-center my-auto">
+        <CategorySlider />
       </div>
     </div>
   );

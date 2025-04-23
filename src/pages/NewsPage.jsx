@@ -5,6 +5,7 @@ import Pagination from "../components/common/Pagination";
 import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 import Button from "../components/common/Button";
 import SectionTitle from "../components/common/SectionTitle";
+import NewsSlider from "../components/newsPage-components/NewsSlider";
 
 function NewsPage() {
   return (
@@ -31,8 +32,13 @@ function NewsPage() {
         customClass="mb-[45px]"
       />
 
-      <CoursesSlider sliderElement={<NewsCard />} />
-      <Button style="mx-[auto] mt-[70px] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
+      <div className="hidden lg:block">
+        <CoursesSlider sliderElement={<NewsCard />} />
+      </div>
+      <div className="block lg:hidden w-full">
+        <NewsSlider />
+      </div>
+      <Button style="mx-[auto] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
         مشاهده مقالات بیشتر
       </Button>
     </div>

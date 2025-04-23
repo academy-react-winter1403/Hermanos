@@ -1,6 +1,7 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
 import Servise from "./Servise";
+import ServicesCard from "./ServicesCard";
 
 const OurServices = () => {
   return (
@@ -12,6 +13,7 @@ const OurServices = () => {
       />
       <div className="sevices-container  w-[90%] mx-[auto] flex flex-row flex-wrap gap-[30px] justify-center mt-[90px] mb-[100px]">
         <Servise />
+        <ServicesCard />
       </div>
     </>
   );

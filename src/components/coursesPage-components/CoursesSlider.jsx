@@ -1,15 +1,8 @@
-import React from "react";
-import CourseCard from "../common/CourseCard";
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper/modules";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import CourseCard from "../common/CourseCard";
 
 const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
   const SwiperStyle = {
@@ -18,47 +11,29 @@ const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    gap: "50px",
+    gap: "",
     m: "",
   };
 
   return (
     <div className="w-[99%] h-[600px] mx-[auto]">
       <Swiper
-        navigation={true}
-        modules={[Navigation]}
-        className="mySwiper h-[100%]"
+        slidesPerView={3}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper h-[100%] lg:w-[85%] xl:w-[80%] 2xl:w-[70%]"
       >
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>
-          {sliderElement}
-          {sliderElement}
-          {sliderElement}
-        </SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
       </Swiper>
     </div>
   );

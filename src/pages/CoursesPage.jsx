@@ -5,6 +5,7 @@ import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 import SectionTitle from "../components/common/SectionTitle";
 import CourseCard from "../components/common/CourseCard";
 import Button from "../components/common/Button";
+import NewsSlider from "../components/newsPage-components/NewsSlider";
 
 function CoursesPage() {
   return (
@@ -20,8 +21,12 @@ function CoursesPage() {
           titleClass="mb-[10px]"
         />
       </div>
-      <CoursesSlider />
-
+      <div className="hidden lg:block">
+        <CoursesSlider />
+      </div>
+      <div className="block lg:hidden w-full">
+        <NewsSlider sliderElement={<CourseCard />} />
+      </div>
       <Button style="mx-[auto] mt-[70px] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)]">
         مشاهده دوره های بیشتر
       </Button>
