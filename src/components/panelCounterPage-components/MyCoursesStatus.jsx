@@ -32,7 +32,7 @@ const CircleProgress = () => (
 function MyCoursesStatus() {
   return (
     <div className=" h-[380px] w-[48.5%] flex flex-row flex-wrap justify-center gap-[5px]">
-      <div className="new-courses h-[250px] w-[100%] rounded-[10px] shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] bg-[rgba(251,246,246,1)]">
+      <div className="new-courses h-[250px] mb-[5px] w-[100%] rounded-[10px] shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] bg-[rgba(251,246,246,1)]">
         <div className="new-coourses-header w-[100%] h-[40px] text-center bg-[rgba(164,246,222,1)] rounded-t-[10px] leading-[35px]">
           وضعیت دوره های من
         </div>

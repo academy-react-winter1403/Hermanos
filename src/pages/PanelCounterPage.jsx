@@ -2,8 +2,6 @@ import React from "react";
 import NewCourses from "../components/panelCounterPage-components/NewCourses";
 import PanelWelcome from "../components/panelCounterPage-components/PanelWelcome";
 import MyCoursesStatus from "../components/panelCounterPage-components/MyCoursesStatus";
-import SectionTitle from "../components/common/SectionTitle";
-import Button from "../components/common/Button";
 import PanelUsere from "../components/panelCounterPage-components/PanelUsere";
 
 function PanelCounterPage() {
