@@ -2,7 +2,7 @@ import React from "react";
 
 const LogoIcon = () => {
   return (
-    <div className="logo flex w-[30%] h-[100%] mt-5 ">
+    <div className="logo flex w-[30%] h-[100%] mt-4 ">
       <span className="mx-[-5px] p-0">
         <img
           className="h-[30px] w-[15px] "

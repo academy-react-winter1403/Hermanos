@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import Sugesstion from "./Sugesstion";
 import UserSugesstion from "./UserSugesstion";
+import { Tabs } from "antd";
 
 // function CourseDetailSugesstion({ signTo, userTo, holderStyle, btnStyle }) {
 //   return (
@@ -33,34 +34,51 @@ import UserSugesstion from "./UserSugesstion";
 //   );
 // }
 
+// function CourseDetailSugesstion() {
+//   return (
+//     <div className="tabs tabs-border border-2 border-[rgba(164,246,222,1)] w-[800px] flex flex-row flex-nowrap justify-center mx-[auto] mt-[30px] relative">
+//       <div className="border border-transparent w-[400px] text-center h-[65px] mx-[auto]">
+//         <input
+//           type="radio"
+//           name="my_tabs_2"
+//           id="option1"
+//           className="tab block w-[100%] h-[100%] leading-[60px] text-[rgba(34,68,93,1)] text-[16px] "
+//           aria-label="ثبت نظر"
+//         />
+//         <div className="tab-content border border-[red] p-10 w-[100%] absolute left-[0]">
+//           <Sugesstion />
+//         </div>
+//       </div>
+
+//       <div className="border border-transparent w-[400px] text-center h-[65px] mx-[auto] ]">
+//         <input
+//           type="radio"
+//           name="my_tabs_2"
+//           className="tab block w-[100%] h-[100%] leading-[60px] text-[rgba(34,68,93,1)] text-[16px]"
+//           aria-label="نظرات کاربران"
+//         />
+//         <div className="tab-content border border-[red] p-10 w-[100%] absolute left-[0]">
+//           <UserSugesstion />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
 function CourseDetailSugesstion() {
   return (
-    <div className="tabs tabs-border border-2 border-[rgba(164,246,222,1)] w-[800px] flex flex-row flex-nowrap justify-center mx-[auto] mt-[30px] relative">
-      <div className="border border-transparent w-[400px] text-center h-[65px] mx-[auto]">
-        <input
-          type="radio"
-          name="my_tabs_2"
-          id="option1"
-          className="tab block w-[100%] h-[100%] leading-[60px] text-[rgba(34,68,93,1)] text-[16px] "
-          aria-label="ثبت نظر"
-        />
-        <div className="tab-content border border-[red] p-10 w-[100%] absolute left-[0]">
-          <Sugesstion />
-        </div>
-      </div>
-
-      <div className="border border-transparent w-[400px] text-center h-[65px] mx-[auto] ]">
-        <input
-          type="radio"
-          name="my_tabs_2"
-          className="tab block w-[100%] h-[100%] leading-[60px] text-[rgba(34,68,93,1)] text-[16px]"
-          aria-label="نظرات کاربران"
-        />
-        <div className="tab-content border border-[red] p-10 w-[100%] absolute left-[0]">
-          <UserSugesstion />
-        </div>
-      </div>
-    </div>
+    <Tabs
+      defaultActiveKey="2"
+      centered
+      items={[
+        {
+          label: "ثبت نظرات",
+          key: "1",
+          children: <Sugesstion />,
+        },
+        { label: " نظرات کاربران", key: "2", children: <UserSugesstion /> },
+      ]}
+    />
   );
 }
 

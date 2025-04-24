@@ -25,7 +25,7 @@ import PanelPage from "./pages/PanelPage.jsx";
 import PanelEditProfilePage from "./pages/PanelEditProfilePage.jsx";
 import PanelCounterPage from "./pages/PanelCounterPage.jsx";
 import PanelMyCoursesPage from "./pages/PanelMyCoursesPage.jsx";
-import PanelReservedCourses from "./pages/PanelReservedCourses.jsx";
+import PanelReservedCourses from "./pages/PanelReservedCoursesPage.jsx";
 import PanelFavoritePage from "./pages/PanelFavoritePage.jsx";
 import PanelMyOpinionPage from "./pages/PanelMyOpinionPage.jsx";
 import PanelChangePassPage from "./pages/PanelChangePassPage.jsx";

@@ -11,7 +11,7 @@ function Header() {
 
   if (location.pathname === "/")
     return (
-      <div className="header-container border-b-[rgba(0,223,157,1)] sm:border-b-none w-[100%] flex flex-wrap flex-row items-center justify-between bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
+      <div className="header-container border-b border-b-[rgba(0,223,157,1)] sm:border-b-white w-[100%] flex flex-wrap flex-row items-center justify-between bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
         <HeaderSignInBtn />
         <HeaderNavigations />
         <Logo />
