@@ -1,6 +1,6 @@
 const Pagination = () => {
   return (
-    <div className="join gap-2 flex-row-reverse">
+    <div className="join gap-2 flex-row-reverse mb-4">
       <input
         className="join-item btn border-none btn-circle "
         type="radio"

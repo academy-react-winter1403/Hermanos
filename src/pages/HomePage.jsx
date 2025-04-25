@@ -8,6 +8,7 @@ import NewsCard from "../components/newsPage-components/NewsCard";
 import SectionTitle from "../components/common/SectionTitle";
 import Button from "../components/common/Button";
 import SugesstCriticism from "../components/homePage-components/SugesstCriticism";
+import NewsSlider from "../components/newsPage-components/NewsSlider";
 
 function HomePage() {
   window.addEventListener("scroll", function () {
@@ -30,8 +31,13 @@ function HomePage() {
           description="ساختن دنیایی بهتر، یک دوره در یک زمان"
           customClass="my-[50px]"
         />
-        <CoursesSlider sliderElement={<NewsCard />} />
-        <Button style="mx-[auto] mt-[70px] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[350px] h-[90px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[20px] leading-[80px] bg-[rgba(18,146,108,1)]">
+        <div className="hidden lg:block">
+          <CoursesSlider sliderElement={<NewsCard />} />
+        </div>
+        <div className="block lg:hidden w-full">
+          <NewsSlider />
+        </div>
+        <Button style="mx-[auto] lg:mt-[70px] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[200px] lg:w-[350px] h-[60px] lg:h-[90px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-base  lg:text-[20px] leading-[50px] lg:leading-[80px] bg-[rgba(18,146,108,1)]">
           مشاهده مقالات بیشتر
         </Button>
       </div>

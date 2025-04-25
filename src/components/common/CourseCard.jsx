@@ -5,18 +5,18 @@ import CourseReusableTeacher from "./CourseReusableTeacher";
 
 function CourseCard() {
   return (
-    <div className="course-card w-[290px] h-[560px] relative cursor-pointer hover:scale-102 ">
-      <div className="course-card-logo w-[120px] h-[160px] absolute left-[80px] z-10">
+    <div className="course-card w-[250px] sm:w-[290px] h-[560px] relative cursor-pointer ">
+      <div className="course-card-logo w-[120px] h-[160px] absolute left-[65px] sm:left-[80px] z-10">
         <img src="/images/icons8-angular.svg" alt="" />
       </div>
-      <div className="course-card-body h-[473px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[7px_7px_7px_0px_rgba(0,0,0,0.16)] hover:shadow-[9px_9px_5px_0px_rgba(0,0,0,0.16)]">
+      <div className="course-card-body h-[440px] sm:h-[473px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[7px_7px_7px_0px_rgba(0,0,0,0.16)] hover:shadow-[9px_9px_5px_0px_rgba(0,0,0,0.16)]">
         <div className="course-status mx-[auto] mt-[90px] h-[40px] w-[87%] flex flex-row flex-nowrap justify-between items-center">
           <Like />
           <div className="course-status-btn h-[95%] w-[100px] text-center text-[11px] leading-[33px] rounded-[12px] bg-[rgba(191,244,228,1)] text-[rgba(21,139,104,1)]">
             وضعیت دوره
           </div>
         </div>
-        <div className="course-title mx-[auto] mt-[10px] w-[87%] text-[23px] font-[400] text-end">
+        <div className="course-title mx-[auto] mt-[10px] w-[87%] text-[15px] font-bold text-nowrap text-center">
           آشنایی با برنامه نویسی با وردپرس
         </div>
         <div className="score&teacher mx-[auto] mt-[15px] h-[30px] w-[87%] flex flex-row flex-nowrap justify-between">
@@ -37,15 +37,15 @@ function CourseCard() {
         <p className="speach-time mt-[15px] block mx-[auto] text-[9px] w-[87%] text-end text-[rgba(65,167,137,1)]">
           سخنرانی (120ساعت)50
         </p>
-        <p className="course-description h-[64px] mt-[10px] block mx-[auto] text-[12px] w-[87%] text-end text-[rgba(109,103,103,1)]">
+        <p className="course-description h-[64px] mt-[10px] mb-4 sm:mb-0 block mx-[auto] text-[12px] w-[87%] text-end text-[rgba(109,103,103,1)]">
           لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
           دهندگان وب، تایپوگراف ها و طراحان استفاده می شود
         </p>
         <div className="course-price mt-[10px] border-t pt-[7px] border-t-[rgba(18,146,108,1)]  h-[35px] w-[87%] mx-[auto] flex flex-row flex-nowrap justify-center items-center">
-          <div className="price w-[50%] h-[80%] text-[rgba(225,24,24,1)] text-[18px]">
+          <div className="price w-[50%] h-[80%] text-nowrap text-[rgba(225,24,24,1)] text-sm sm:text-base xl:text-[18px]">
             تومان 3,000,000
           </div>
-          <div className="price-text w-[50%] h-[80%] text-end text-[rgba(18,146,108,1)]">
+          <div className="price-text w-[50%] h-[80%] text-end text-nowrap text-[rgba(18,146,108,1)] text-sm sm:text-base">
             : هزینه تمام دوره
           </div>
         </div>

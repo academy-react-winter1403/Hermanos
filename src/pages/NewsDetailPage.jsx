@@ -4,12 +4,13 @@ import CourseDetailSugesstion from "../components/courseDetail-components/Course
 import CoursesSlider from "../components/coursesPage-components/CoursesSlider";
 import NewsTopic from "../components/newsDetail-components/NewsTopic";
 import NewsCard from "../components/newsPage-components/NewsCard";
+import NewsSlider from "../components/newsPage-components/NewsSlider";
 
 function NewsDetailPage() {
   return (
     <>
       <div className="rounded-[40px] w-[80%] mx-[auto] mt-[100px] bg-[rgba(251,246,246,1)]">
-        <div className="news-detail-pic w-[700px] h-[450px] mx-[auto]">
+        <div className="news-detail-pic lg:w-[700px] sm:h-[450px] mx-auto">
           <img src="/images/6101071.svg" alt="" className="w-[100%] h-[100%]" />
         </div>
         <NewsTopic />
@@ -25,8 +26,13 @@ function NewsDetailPage() {
         title="اخبار و مقالات مشابه"
         description="ساختن دنیایی بهتر، یک دوره در یک زمان"
       />
-      <CoursesSlider sliderElement={<NewsCard />} />
-      <Button style="mx-[auto] mt-[70px] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
+      <div className="mt-[80px] hidden lg:block">
+        <CoursesSlider sliderElement={<NewsCard />} />{" "}
+      </div>
+      <div className="mt-[60px] block lg:hidden w-full">
+        <NewsSlider />
+      </div>
+      <Button style="mx-[auto] mb-[50px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)]">
         مشاهده مقالات بیشتر
       </Button>
     </>

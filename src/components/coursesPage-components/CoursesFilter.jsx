@@ -2,6 +2,7 @@ import React from "react";
 import { Collapse } from "antd";
 import { useState } from "react";
 import { Input, Radio } from "antd";
+import Button from "../common/Button";
 
 const style = {
   display: "flex",
@@ -11,6 +12,8 @@ const style = {
   border: "1px solid rgba(91,225,185,1)",
   borderRadius: "10px",
   padding: "10px",
+  fontSize: "",
+  borderBottom: "rgba(91,225,185,1))",
 };
 
 const InputRadio = () => {
@@ -20,7 +23,7 @@ const InputRadio = () => {
   };
   return (
     <Radio.Group
-      buttonCheckedBg="rgba(91,225,185,1)"
+      buttonCheckedBg={"rgba(91,225,185,1)"}
       style={style}
       onChange={onChange}
       value={value}
@@ -62,7 +65,7 @@ const items = [
     ),
   },
 ];
-const CollapseFilter = () => {
+export const CollapseFilter = () => {
   const onChange = (key) => {
     console.log(key);
   };
@@ -70,6 +73,7 @@ const CollapseFilter = () => {
     <Collapse
       className="text-end "
       bordered={false}
+      style={{ background: "transparent" }}
       onChange={onChange}
       items={items}
     />
@@ -79,9 +83,9 @@ const CollapseFilter = () => {
 
 function CoursesFilter() {
   return (
-    <div className="right-filter rounded-3xl bg-[rgba(251,246,246,1)] shadow-[7px_7px_10px_0px_rgba(0,0,0,0.16)] mt-[10px] ml-auto w-[18%] h-[500px]">
+    <div className="hidden lg:block right-filter text-[rgba(34,68,93,1)] rounded-3xl bg-[rgba(251,246,246,1)] shadow-[7px_7px_10px_0px_rgba(0,0,0,0.16)] mt-[10px] ml-auto w-[19%] h-[500px]">
       <div className="right-filter-title mb-[20px] w-[80px] h-[30px] mx-[auto] mt-[20px] flex flex-row flex-nowrap items-center">
-        <div className="filter-title w-[60%] h-[100%] text-[13px] text-center leading-[25px]">
+        <div className="filter-title w-[60%] h-[100%] text-[13px] text-start leading-[25px]">
           فیلترها
         </div>
         <div className="filter-icon w-[30%] h-[60%]">
@@ -95,6 +99,13 @@ function CoursesFilter() {
       <div className=" w-[100%] mt-[30px]">
         <CollapseFilter />
       </div>
+      <Button
+        style={
+          "bg-[rgba(91,225,185,1)] w-[100px] h-[30px] rounded-md text-xs leading-[30px] mt-5 "
+        }
+      >
+        پاک کردن فیلترها
+      </Button>
     </div>
   );
 }

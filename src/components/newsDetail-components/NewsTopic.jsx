@@ -4,9 +4,9 @@ import NewsInformation from "./NewsInformation";
 
 function NewsTopic() {
   return (
-    <div className="news-topic border border-[rgba(239,239,239,1)] w-[95%] mx-[auto] mt-[25px] bg-[rgba(255,255,255,1)] rounded-[37px] flex flex-col items-center shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)]">
-      <SectionTitle title="عنوان مقاله" titleClass="mt-[25px] mb-[30px]" />
-      <p className="w-[95%] text-[17px] text-end whitespace-pre-line ">
+    <div className="news-topic border h-[400px] sm:min-h-[550px]  border-[rgba(239,239,239,1)] w-[95%] mx-[auto] mt-[25px] bg-[rgba(255,255,255,1)] rounded-[37px] flex flex-col items-center shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)]">
+      <SectionTitle title="عنوان مقاله" titleClass="mt-[15px] mb-[10px]" />
+      <p className="w-[95%] text-xs sm:text-sm md:text-base  overflow-x-hidden xl:overflow-visible  lg:text-[17px] text-end whitespace-pre-line ">
         لورم ایپسوم محبوب ترین و استانداردترین متن ساختگی است که توسط توسعه
         دهندگان وب، تایپوگراف ها و طراحان استفاده می شود. تکه های لاتین متن نشان
         می دهد که یک پروژه در حال توسعه است. لورم ایپسوم فقط برای توسعه دهندگان

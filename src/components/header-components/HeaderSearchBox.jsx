@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 
 const HeaderSearchBox = () => {
   return (
-    <div className="searchbox  w-[150px] h-[30px] flex flex-nowrap mt-1 ">
+    <div className="searchbox  w-[150px] h-[30px] flex flex-nowrap mt-1 sm:mt-2 lg:mt-[1.5px] ">
       <div className="search-icon w-[80px] rounded-l-[43px] h-[100%] bg-[rgba(164,246,222,1)] border border-[rgba(21,139,104,1)] ">
         <BsSearch size={18} className="mx-auto mt-[6px]" />
       </div>
