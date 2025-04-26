@@ -135,6 +135,7 @@ const router = createBrowserRouter([
     element: <PanelPage />,
     children: [
       {
+        index: true,
         path: "/panel-student/counter",
         element: <PanelCounterPage />,
       },

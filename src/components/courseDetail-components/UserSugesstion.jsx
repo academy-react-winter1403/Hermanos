@@ -6,7 +6,7 @@ import Button from "../common/Button";
 function UserSugesstion() {
   return (
     <>
-      <div className="user-sugesstion px-[30px] border border-[transparent] w-[95%] mx-[auto] bg-[rgba(255,255,255,1)] rounded-[35px]">
+      <div className="user-sugesstion  hidden sm:block px-[30px] border border-[transparent] w-[95%] mx-[auto] bg-[rgba(255,255,255,1)] rounded-[35px]">
         <div className="user-sugesstion-info mt-[20px] w-[100%] mx-[auto] h-[50px] flex flex-row flex-nowrap justify-between">
           <div>
             <Like />

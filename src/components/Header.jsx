@@ -16,7 +16,7 @@ function Header() {
         <HeaderSignInBtn />
         <HeaderNavigations />
         <Logo />
-        <div className="sm:hidden  w-[30px] h-[30px] ">
+        <div className="sm:hidden  w-[150px] h-[50px] mr-[-40px]">
           <HeaderNavMenu />
         </div>
         <HeroSection />
@@ -29,7 +29,7 @@ function Header() {
           <HeaderSignInBtn />
           <HeaderNavigations />
           <Logo />
-          <div className="sm:hidden  w-[30px] h-[30px] ">
+          <div className="sm:hidden  w-[150px] h-[50px] mr-[-40px] ">
             <HeaderNavMenu />
           </div>
         </div>

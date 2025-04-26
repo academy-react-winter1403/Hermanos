@@ -7,6 +7,7 @@ import Button from "../components/common/Button";
 import SectionTitle from "../components/common/SectionTitle";
 import NewsSlider from "../components/newsPage-components/NewsSlider";
 import CoursesFilter from "../components/coursesPage-components/CoursesFilter";
+import MyCoursePagination from "../components/common/MyCoursePagination";
 
 function NewsPage() {
   return (
@@ -24,7 +25,9 @@ function NewsPage() {
             <NewsCard />
           ))}
         </div>
-        <Pagination />
+        <div className="mt-[15px] mb-[20px] mx-[auto] flex justify-center items-center">
+          <MyCoursePagination />
+        </div>
       </div>
 
       <SectionTitle
@@ -40,7 +43,7 @@ function NewsPage() {
       <div className="block lg:hidden w-full">
         <NewsSlider />
       </div>
-      <Button style="mx-[auto] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
+      <Button style="mt-[50px] mx-[auto] mb-[70px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[18px] leading-[53px] bg-[rgba(18,146,108,1)]">
         مشاهده مقالات بیشتر
       </Button>
     </div>

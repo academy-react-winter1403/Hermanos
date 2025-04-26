@@ -32,7 +32,7 @@ function NewsDetailPage() {
       <div className="mt-[60px] block lg:hidden w-full">
         <NewsSlider />
       </div>
-      <Button style="mx-[auto] mb-[50px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)]">
+      <Button style="mt-[50px] mx-[auto] mb-[50px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)]">
         مشاهده مقالات بیشتر
       </Button>
     </>
