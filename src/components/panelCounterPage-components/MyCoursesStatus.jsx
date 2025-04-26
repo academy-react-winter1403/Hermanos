@@ -63,7 +63,7 @@ function MyCoursesStatus() {
         </div>
       </div>
 
-      <div className="new-courses ml-[5px] w-[155px] h-[120px] rounded-[10px] shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] bg-[rgba(251,246,246,1)] mx-[auto] pt-[10px] flex flex-row flex-wrap justify-center">
+      <div className="new-courses ml-[5px] w-[145px] h-[120px] rounded-[10px] shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] bg-[rgba(251,246,246,1)] mx-[auto] pt-[10px] flex flex-row flex-wrap justify-center">
         <CircleProgress />
         <div className="text-[14px]">درصد تکمیل پروفایل</div>
       </div>

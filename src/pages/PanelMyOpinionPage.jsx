@@ -34,7 +34,20 @@ function PanelMyOpinionPage() {
           {
             label: " اخبار و مقالات   ",
             key: "2",
-            children: <div>there is nothing in here</div>,
+            children: (
+              <div className="shadow-[10px_10px_5px_0px_rgba(0,0,0,0.16)] w-[1050px] h-[480px] rounded-[10px] bg-[rgba(251,246,246,1)] mx-[auto]">
+                <FavoriteCourseHeader />
+                <div className="w-[95%] h-[330px] mx-[auto] mt-[15px]">
+                  <MyFavoriteCourse />
+                  <MyFavoriteCourse />
+                  <MyFavoriteCourse />
+                  <MyFavoriteCourse />
+                </div>
+                <div className="pagination h-[50px] w-[300px] mx-[auto] flex flex-row flex-nowrap justify-center items-center">
+                  <MyCoursePagination />
+                </div>
+              </div>
+            ),
           },
         ]}
       />

@@ -32,7 +32,7 @@ function CoursesHolder() {
       <Swiper
         pagination={pagination}
         modules={[Pagination]}
-        className="mySwiper h-[100%]"
+        className="mySwiper h-[100%] mb-[40px]"
       >
         <SwiperSlide style={SwiperStyle}>
           <CourseCard />
@@ -41,8 +41,12 @@ function CoursesHolder() {
           <CourseCard />
           <CourseCard />
           <CourseCard />
+          <CourseCard />
+          <CourseCard />
         </SwiperSlide>
         <SwiperSlide style={SwiperStyle}>
+          <CourseCard />
+          <CourseCard />
           <CourseCard />
           <CourseCard />
           <CourseCard />

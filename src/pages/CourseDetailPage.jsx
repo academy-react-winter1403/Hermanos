@@ -87,7 +87,7 @@ function CourseDetailPage() {
       <div className="mt-[60px] block lg:hidden w-full">
         <NewsSlider sliderElement={<CourseCard />} />
       </div>
-      <Button style="mx-[auto] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)]">
+      <Button style="mx-[auto] mb-[120px] border border-[2px] border-[rgba(18,146,108,1)] w-[230px] h-[60px] rounded-[51px] text-[rgba(255,255,255,1)] text-center text-[16px] leading-[50px] bg-[rgba(18,146,108,1)] mt-[50px]">
         مشاهده دوره های بیشتر
       </Button>
     </>
