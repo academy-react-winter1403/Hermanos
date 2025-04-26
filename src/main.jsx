@@ -92,43 +92,37 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />,
-    children: [
-      {
-        path: "/login/two-step",
-        element: <LoginTwoStep />,
-      },
+  },
+  {
+    path: "/login/two-step",
+    element: <LoginTwoStep />,
+  },
 
-      {
-        path: "/login/forget-password",
-        element: <ForgetPassPage />,
-        children: [
-          {
-            path: "/login/forget-password/new-password",
-            element: <NewPassWordForm />,
-          },
-        ],
-      },
-    ],
+  {
+    path: "/login/forget-password",
+    element: <ForgetPassPage />,
+  },
+  {
+    path: "/login/forget-password/new-password",
+    element: <NewPassWordForm />,
   },
   {
     path: "/sign-up",
     element: <SignUpPage />,
-    children: [
-      {
-        index: true,
-        path: "/sign-up/step-one",
-        element: <RegisterStepOne />,
-      },
+  },
+  {
+    index: true,
+    path: "/sign-up/step-one",
+    element: <RegisterStepOne />,
+  },
 
-      {
-        path: "/sign-up/step-two",
-        element: <RegisterStepTwo />,
-      },
-      {
-        path: "/sign-up/step-three",
-        element: <RegisterStepThree />,
-      },
-    ],
+  {
+    path: "/sign-up/step-two",
+    element: <RegisterStepTwo />,
+  },
+  {
+    path: "/sign-up/step-three",
+    element: <RegisterStepThree />,
   },
   {
     path: "/panel-student",

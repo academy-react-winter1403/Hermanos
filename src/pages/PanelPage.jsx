@@ -6,7 +6,7 @@ import { Outlet } from "react-router-dom";
 function PanelPage() {
   //this is the max-width and max-height of the window//
   return (
-    <div className="panel-main-holder border mx-[auto] w-[1535px] h-[735px]">
+    <div className="panel-main-holder mx-[auto] w-[1535px] h-[735px]">
       <div className="panel-header w-[100%] h-[100px] flex flex-row flex-nowrap justify-center">
         <PanelHeader />
         <div className="panel-header-right w-[25%] h-[100%] text-center leading-[88px] text-[25px]">
