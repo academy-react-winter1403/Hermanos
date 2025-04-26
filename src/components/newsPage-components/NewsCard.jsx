@@ -24,7 +24,7 @@ const NewsCard = (index) => {
             وضعیت مقاله
           </Button>
           <div className="h-[100%] w-[35%] "></div>
-          <div className=" flex flex-row flex-nowrap justify-center h-[80%] w-[25%] mr-[10px] xl:mr-[35px] gap-1">
+          <div className=" flex flex-row flex-nowrap justify-center text-start h-[80%] w-[25%] mr-[10px] xl:mr-[35px] gap-1">
             {/* <div className="w-[50px] h-[100%]">
               <img
                 src="/images/Path 1703.svg"
@@ -55,23 +55,29 @@ const NewsCard = (index) => {
             <Like />
           </div>
         </div>
-        <h1 className="mt-2 font-bold sm:text-sm md:text-base xl:text-xl mb-3 text-nowrap  ">
+        <h1 className="mt-2 font-bold sm:text-sm md:text-base xl:text-base mb-3 text-nowrap  ">
           آشنایی با برنامه نویسی با وردپرس
         </h1>
-        <div className="rateHolder w-[100%] h-[38px] mb-3 flex flex-row-reverse flex-nowrap">
-          <div className="min-w-[47%] flex flex-row-reverse flex-nowrap gap-[7px] lg:gap-1">
-            <div className="h-[100%] w-43 ">
+        <div className="rateHolder w-[100%] h-[38px] mb-3 flex flex-row-reverse flex-nowrap justify-between">
+          <div className="w-[200px] h-[40px] flex flex-row flex-nowrap gap-[5px]">
+            <div className=" w-[75%] h-[100%] text-end leading-[36px] text-sm">
+              جان اسمیت
+            </div>
+            <div className=" w-[25%] h-[100%] ">
               <img
                 src="/images/Front-End-developer-profile-picture.svg"
                 alt=""
                 className="w-[100%] h-[100%]"
               />
             </div>
-            <div className="h-[100%] text-sm lg:text-base xl:text-[17px]  xl:ml-11  font-normal text-center text-nowrap text-[rgba(140,159,154,1)] my-1">
-              جان اسمیت
+            {/* <div className="h-[100%] border w-[30%] ">
+
             </div>
+            <div className="h-[100%] border w-[70%] text-sm lg:text-base xl:text-[17px]  xl:ml-11  font-normal text-center text-nowrap text-[rgba(140,159,154,1)] my-1">
+              
+            </div> */}
           </div>
-          <div className="h-[100%] w-[32%] "></div>
+
           <div className="min-w-[30%] h-[100%] flex flex-row flex-nowrap">
             <div className="w-[30%] h-[80%] my-auto">
               <img

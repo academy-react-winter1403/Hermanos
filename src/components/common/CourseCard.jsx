@@ -5,11 +5,11 @@ import CourseReusableTeacher from "./CourseReusableTeacher";
 
 function CourseCard() {
   return (
-    <div className="course-card w-[250px] sm:w-[290px] h-[560px] relative cursor-pointer ">
-      <div className="course-card-logo w-[120px] h-[160px] absolute left-[65px] sm:left-[80px] z-10">
+    <div className="course-card w-[250px] sm:w-[290px] h-[570px]  relative cursor-pointer ">
+      <div className="course-card-logo w-[120px] h-[160px] absolute left-[65px] sm:left-[85px] z-10">
         <img src="/images/icons8-angular.svg" alt="" />
       </div>
-      <div className="course-card-body h-[440px] sm:h-[473px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[7px_7px_7px_0px_rgba(0,0,0,0.16)] hover:shadow-[9px_9px_5px_0px_rgba(0,0,0,0.16)]">
+      <div className="course-card-body h-[440px] sm:h-[445px] w-[100%] absolute top-[75px] bg-[rgba(251,246,246,1)] rounded-[34px] shadow-[7px_7px_7px_0px_rgba(0,0,0,0.16)] hover:shadow-[9px_9px_5px_0px_rgba(0,0,0,0.16)]">
         <div className="course-status mx-[auto] mt-[90px] h-[40px] w-[87%] flex flex-row flex-nowrap justify-between items-center">
           <Like />
           <div className="course-status-btn h-[95%] w-[100px] text-center text-[11px] leading-[33px] rounded-[12px] bg-[rgba(191,244,228,1)] text-[rgba(21,139,104,1)]">

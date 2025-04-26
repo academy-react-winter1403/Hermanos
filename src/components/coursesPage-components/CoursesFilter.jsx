@@ -83,7 +83,7 @@ export const CollapseFilter = () => {
 
 function CoursesFilter() {
   return (
-    <div className="hidden lg:block right-filter text-[rgba(34,68,93,1)] rounded-3xl bg-[rgba(251,246,246,1)] shadow-[7px_7px_10px_0px_rgba(0,0,0,0.16)] mt-[10px] ml-auto w-[19%] h-[500px]">
+    <div className="hidden lg:block right-filter text-[rgba(34,68,93,1)] rounded-3xl bg-[rgba(251,246,246,1)] shadow-[7px_7px_10px_0px_rgba(0,0,0,0.16)] mt-[10px] ml-auto w-[19%] h-[700px]">
       <div className="right-filter-title mb-[20px] w-[80px] h-[30px] mx-[auto] mt-[20px] flex flex-row flex-nowrap items-center">
         <div className="filter-title w-[60%] h-[100%] text-[13px] text-start leading-[25px]">
           فیلترها

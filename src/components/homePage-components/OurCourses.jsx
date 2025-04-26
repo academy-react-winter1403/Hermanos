@@ -10,8 +10,8 @@ const OurCourses = () => {
     <div className="flex flex-row flex-wrap justify-center">
       <div className="mt-15 sm:mt-0">
         <SectionTitle
-          title="خدمات ما"
-          description=" ما فرصت آماده شدن برای زندگی را فراهم می کنیم"
+          title="دوره های ما"
+          description="ساختن دنیای بهتر یک دوره در یک زمان"
         />
       </div>
       <div className=" w-[100%] mt-10 mb-10 hidden lg:block">
