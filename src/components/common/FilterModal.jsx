@@ -1,9 +1,7 @@
 import React from "react";
-import { Button, Flex, Modal } from "antd";
-import CoursesFilter, {
-  CollapseFilter,
-} from "../coursesPage-components/CoursesFilter";
-import CoursesSlider from "../coursesPage-components/CoursesSlider";
+// import { Button, Flex, Modal } from "antd";
+import { CollapseFilter } from "../../pages/Courses/coursesPage-components/CoursesFilter";
+// import CoursesSlider from "../coursesPage-components/CoursesSlider";
 
 const FilterModal = () => {
   return (

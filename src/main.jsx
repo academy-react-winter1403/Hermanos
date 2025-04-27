@@ -3,32 +3,31 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import LayOutPage from "./pages/LayOutPage.jsx";
-import HomePage from "./pages/HomePage.jsx";
-import CoursesPage from "./pages/CoursesPage.jsx";
-import NewsPage from "./pages/NewsPage.jsx";
-import AboutUsPage from "./pages/AboutUsPage.jsx";
-import NewsDetailPage from "./pages/NewsDetailPage.jsx";
-import CourseDetailPage from "./pages/CourseDetailPage.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
-import ForgetPassPage from "./pages/ForgetPassPage.jsx";
-import SignUpPage from "./pages/SignUpPage.jsx";
-import DashboardPage from "./pages/DashboardPage.jsx";
-import NotFoundPage from "./pages/NotFoundPage.jsx";
-import LoginTwoStep from "./components/loginPage-components/LoginTwoStep.jsx";
-import RegisterStepOne from "./components/signUpPage-components/RegisterStepOne.jsx";
-import RegisterStepTwo from "./components/signUpPage-components/RegisterStepTwo.jsx";
-import RegisterStepThree from "./components/signUpPage-components/RegisterStepThree.jsx";
-import Sugesstion from "./components/courseDetail-components/Sugesstion.jsx";
-import UserSugesstion from "./components/courseDetail-components/UserSugesstion.jsx";
-import NewPassWordForm from "./components/loginPage-components/NewPassWordForm.jsx";
-import PanelPage from "./pages/PanelPage.jsx";
-import PanelEditProfilePage from "./pages/PanelEditProfilePage.jsx";
-import PanelCounterPage from "./pages/PanelCounterPage.jsx";
-import PanelMyCoursesPage from "./pages/PanelMyCoursesPage.jsx";
-import PanelReservedCourses from "./pages/PanelReservedCoursesPage.jsx";
-import PanelFavoritePage from "./pages/PanelFavoritePage.jsx";
-import PanelMyOpinionPage from "./pages/PanelMyOpinionPage.jsx";
-import PanelChangePassPage from "./pages/PanelChangePassPage.jsx";
+import HomePage from "./pages/Landing/HomePage.jsx";
+import CoursesPage from "./pages/Courses/CoursesPage.jsx";
+import NewsPage from "./pages/News/NewsPage.jsx";
+import AboutUsPage from "./pages/AboutUs/AboutUsPage.jsx";
+import NewsDetailPage from "./pages/NewsDetail/NewsDetailPage.jsx";
+import CourseDetailPage from "./pages/CourseDetail/CourseDetailPage.jsx";
+import LoginPage from "./pages/Login/LoginPage.jsx";
+import ForgetPassPage from "./pages/Login/loginPage-components/ForgetPassPage.jsx";
+import SignUpPage from "./pages/SignUp/SignUpPage.jsx";
+import NotFoundPage from "./pages/NotFound/NotFoundPage.jsx";
+import LoginTwoStep from "./pages/Login/loginPage-components/LoginTwoStep.jsx";
+import RegisterStepOne from "./pages/SignUp/signUpPage-components/RegisterStepOne.jsx";
+import RegisterStepTwo from "./pages/SignUp/signUpPage-components/RegisterStepTwo.jsx";
+import RegisterStepThree from "./pages/SignUp/signUpPage-components/RegisterStepThree.jsx";
+import Sugesstion from "./pages/CourseDetail//courseDetail-components/Sugesstion.jsx";
+import UserSugesstion from "./pages/CourseDetail/courseDetail-components/UserSugesstion.jsx";
+import NewPassWordForm from "./pages/Login/loginPage-components/NewPassWordForm.jsx";
+import PanelPage from "./pages/PanelStudent/PanelLayout/PanelPage.jsx";
+import PanelEditProfilePage from "./pages/PanelStudent/EditProfilePage/PanelEditProfilePage.jsx";
+import PanelCounterPage from "./pages/PanelStudent/CounterPage/PanelCounterPage.jsx";
+import PanelMyCoursesPage from "./pages/PanelStudent/MyCoursesPage/PanelMyCoursesPage.jsx";
+import PanelReservedCourses from "./pages/PanelStudent/ReservedCoursesPage/PanelReservedCoursesPage.jsx";
+import PanelFavoritePage from "./pages/PanelStudent/FavoritePage/PanelFavoritePage.jsx";
+import PanelMyOpinionPage from "./pages/PanelStudent/MyOpinionPage/PanelMyOpinionPage.jsx";
+import PanelChangePassPage from "./pages/PanelStudent/ChangePasswordPage/PanelChangePassPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -81,11 +80,6 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <AboutUsPage />,
-      },
-
-      {
-        path: "/dashboard",
-        element: <DashboardPage />,
       },
     ],
   },

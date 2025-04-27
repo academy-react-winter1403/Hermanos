@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "IRANSansXFaNum-Regular";
-  src: url("/fonts/IRANSansXFaNum-Regular.ttf");
+  src: url("./assets/fonts/IRANSansXFaNum-Regular.ttf");
 }
 body {
   font-family: "IRANSansXFaNum-Regular";
