@@ -16,10 +16,10 @@ function AboutUsPage() {
           را که می‌خواهید انتخاب کنید، کپی کنید"
           />
         </div>
-        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center items-center">
-          <div className=" w-[75%] h-[90%] text-end flex flex-col indent-[10px]">
+        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center gap-3 items-center">
+          <div className=" w-[75%] h-[70%] text-end flex flex-col indent-[10px]">
             <h3 className=" w-[100%] h-[40px]">آدرس و ساعت کاری</h3>
-            <p className=" w-[100%] h-[60px] text-[13px] leading-[30px]">
+            <p className=" w-[100%] h-[60px] text-[13px] leading-[25px]">
               ساری ، بلوارخزر، ششصد دستگاه، آموزشگاه بحر دوشنبه – جمعه : 8:00 –
               18:00
             </p>
@@ -32,8 +32,8 @@ function AboutUsPage() {
             />
           </div>
         </div>
-        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center items-center">
-          <div className=" w-[75%] h-[90%] text-end flex flex-col indent-[10px]">
+        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center gap-3 items-center">
+          <div className=" w-[75%] h-[70%] text-end flex flex-col indent-[10px]">
             <h3 className=" w-[100%] h-[40px]">شماره تماس</h3>
             <p className=" w-[100%] h-[60px] text-[13px] leading-[30px]">
               011-33883358
@@ -47,8 +47,8 @@ function AboutUsPage() {
             />
           </div>
         </div>
-        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center items-center">
-          <div className=" w-[75%] h-[90%] text-end flex flex-col indent-[30px]">
+        <div className="contact-us-title  w-[90%] h-[100px] mt-[30px] flex flex-row flex-nowrap justify-center gap-3 items-center">
+          <div className=" w-[75%] h-[70%] text-end flex flex-col indent-[30px]">
             <h3 className=" w-[100%] h-[40px]">آدرس ایمیل</h3>
             <p className=" w-[100%] h-[60px] text-[13px] leading-[30px]">
               bahr_academy@gmail.com

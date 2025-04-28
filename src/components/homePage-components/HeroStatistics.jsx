@@ -28,7 +28,7 @@ const HeroStatistics = () => {
           className="flex flex-col flex-nowrap items-center p-4 w-22 sm:w-40"
         >
           <img src={stat.icon} alt="" className=" w-[80%] my-auto "></img>
-          <span className="text-[rgba(21,139,104,1)] text-xs sm:text-md mt-auto text-nowrap">
+          <span className="text-[rgba(21,139,104,1)] text-xs sm:text-base lg:text-lg mt-auto text-nowrap">
             {stat.label}
           </span>
           <span className="text-[rgba(21,139,104,1)] text:sm sm:text-4xl font-normal my-auto ">

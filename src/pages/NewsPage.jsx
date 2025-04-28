@@ -16,7 +16,7 @@ function NewsPage() {
       <SectionTitle
         title="لیست اخبار  و مقالات"
         titleClass="text-[30px]"
-        customClass="mb-[50px] mt-[90px]"
+        customClass="mb-[70px] mt-[90px]"
       />
       <MainCoursesSearch />
       <div className="newsContainer border border-[rgba(239,239,239,1)] shadow-[10px_10px_7px_0px_rgba(0,0,0,0.16)] flex flex-wrap justify-center rounded-2xl mt-5 mb-5 mx-auto ">

@@ -21,7 +21,7 @@ function SearchBox() {
       </div>
       <div className="input-holder w-[300px] h-[100%]">
         <input
-          className="border w-[100%] border-l-transparent border-[rgba(21,139,104,1)] h-[100%] rounded-r-[43px] text-sm lg:text-base text-end text-[rgba(128,122,122,1)] "
+          className="border w-[100%] border-l-transparent bg-white border-[rgba(21,139,104,1)] h-[100%] rounded-r-[43px] text-sm lg:text-base text-end text-[rgba(128,122,122,1)] "
           placeholder="...جستجو     "
         />
       </div>

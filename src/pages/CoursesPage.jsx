@@ -13,7 +13,10 @@ function CoursesPage() {
   return (
     <div>
       <div className="main-courses mb-[40px] mt-[80px] mx-[auto] gap-[10px] w-[95%] flex flex-wrap flex-row justify-center">
-        <SectionTitle title="لیست دوره ها  " titleClass="mb-[40px]" />
+        <SectionTitle
+          title="لیست دوره ها  "
+          titleClass="text-xl font-bold mb-[30px]"
+        />
         <MainCoursesSearch />
         {/* <CoursesHolder /> */}
         <div className="main-courses-slider mb-[80px] shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[100%] lg:w-[79%] min-h-[1300px] rounded-[37px] gap-y-[40px] ">

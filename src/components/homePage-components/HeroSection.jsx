@@ -3,7 +3,7 @@ import Button from "../common/Button";
 
 const HeroSection = () => {
   return (
-    <div className="sm:h-[700px] flex flex-row-reverse justify-center text-end py-20 bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
+    <div className="sm:h-[700px] flex flex-row-reverse justify-center text-end py-20  bg-white">
       <div className="intro w-full sm:w-[45%] h-[400px] my-[auto]">
         <h2 className="text-2xl sm:text-4xl font-bold pb-5 text-nowrap text-center sm:text-end ">
           آموزشگاه اچ وان
