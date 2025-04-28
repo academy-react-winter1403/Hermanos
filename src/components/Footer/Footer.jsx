@@ -58,21 +58,21 @@ function Footer() {
             <div className="flex flex-nowrap mt-3 gap-2">
               <span className=" cursor-pointer">
                 <img
-                  src="/public/images/social network icon (10).svg"
+                  src="/images/social network icon (10).svg"
                   alt=""
                   className="w-[30px] h-[25px] "
                 />
               </span>
               <span className=" cursor-pointer">
                 <img
-                  src="/public/images/social network icon (6).svg"
+                  src="/images/social network icon (6).svg"
                   alt=""
                   className="w-[30px] h-[25px] "
                 />
               </span>
               <span className="cursor-pointer">
                 <img
-                  src="/public/images/social network icon (7).svg"
+                  src="/images/social network icon (7).svg"
                   alt=""
                   className="w-[30px] h-[25px] "
                 />
