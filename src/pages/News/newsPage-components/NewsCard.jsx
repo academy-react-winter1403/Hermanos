@@ -20,9 +20,9 @@ const NewsCard = (index) => {
       </div>
       <div className="flex flex-wrap justify-center m-4">
         <div className="newsStatus flex flex-row-reverse flex-nowrap w-[100%] h-[40px] mt-5 ">
-          <Button style=" bg-[rgba(191,244,228,1)] pt-1 rounded-lg w-[120px] h-[35px] text-[rgba(21,139,104,1)] text-xs lg:text-sm leading-[25px] my-auto ">
+          <div className=" bg-[rgba(191,244,228,1)] pt-1 rounded-lg w-[120px] h-[35px] text-[rgba(21,139,104,1)] text-xs lg:text-sm leading-[26px] my-auto text-center ">
             وضعیت مقاله
-          </Button>
+          </div>
           <div className="h-[100%] w-[35%] "></div>
           <div className=" flex flex-row flex-nowrap justify-center text-start h-[80%] w-[25%] mr-[10px] xl:mr-[35px] gap-1">
             {/* <div className="w-[50px] h-[100%]">
@@ -70,12 +70,6 @@ const NewsCard = (index) => {
                 className="w-[100%] h-[100%]"
               />
             </div>
-            {/* <div className="h-[100%] border w-[30%] ">
-
-            </div>
-            <div className="h-[100%] border w-[70%] text-sm lg:text-base xl:text-[17px]  xl:ml-11  font-normal text-center text-nowrap text-[rgba(140,159,154,1)] my-1">
-              
-            </div> */}
           </div>
 
           <div className="min-w-[30%] h-[100%] flex flex-row flex-nowrap">
