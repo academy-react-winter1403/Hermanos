@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className=" flex flex-nowrap w-[100%] xl:h-[270px] mt-[50px] bg-[rgba(164,246,222,1)] py-4 sm:py-8 text-gray-800 text-center">
+    <footer className=" flex flex-nowrap w-[100%] xl:h-[320px] bg-[rgba(164,246,222,1)] py-4 sm:py-[20px] text-gray-800 text-center">
       <div className="container mx-auto px-6">
         {/* Footer Top */}
         <div className=" xl:h-[150px] flex flex-row-reverse gap-3 sm:gap-7 md:gap-10 lg:gap-50 xl:gap-80 text-right">

@@ -1,18 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { BiSolidLogIn } from "react-icons/bi";
 import HeaderSearchBox from "./HeaderSearchBox";
 
 function HeaderSignInBtn() {
+  const [showSearch, setShowSearch] = useState(true);
+
+  function handleShowSearch() {
+    setShowSearch((show) => !show);
+  }
+
   return (
-    <div className="signin-container w-[50px] lg:w-[150px]  h-[45%] flex flex-nowrap flex-row sm:ml-[5px] ml-[5px] gap-2 lg:gap-[10px]">
+    <div className="signin-container w-[50px] lg:w-[150px]  h-[45%] flex flex-nowrap flex-row sm:ml-[15px] ml-[5px] gap-2 lg:gap-[10px]">
       <div className="sign-in-btn rounded-md lg:bg-[rgba(0,223,157,1)] w-[70%] h-[100%] my-auto sm:my-1 ">
         <Link
           to="/login"
-          className="py-[7px] text-[14px] lg:block hidden text-center"
+          className="py-[7px] text-[13px] lg:block hidden text-center"
         >
-          ورود/ثبت نام
+          ورود / ثبت نام
         </Link>
         <Link
           to="/login"
@@ -22,11 +28,15 @@ function HeaderSignInBtn() {
         </Link>
       </div>
       <div className="search-icon w-[25%] h-[100%] lg:mt-1 md:mt-0 sm:mt-0">
-        {/* <BsSearch
-          size={20}
-          className="mx-auto mt-[10px] lg:block md:hidden sm:hidden"
-        /> */}
-        <HeaderSearchBox className="" />
+        {showSearch ? (
+          <BsSearch
+            size={20}
+            className="mx-auto mt-[7px] lg:block sm:mt-[12px] cursor-pointer "
+            onClick={handleShowSearch}
+          />
+        ) : (
+          <HeaderSearchBox onHandleShowSearch={handleShowSearch} />
+        )}
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function Header() {
 
   if (location.pathname === "/")
     return (
-      <div className="header-container text-[rgba(34,68,93,1)] w-[100%] flex flex-wrap flex-row items-center justify-between bg-linear-to-br">
+      <div className="header-container text-[rgba(34,68,93,1)] w-[100%] flex flex-wrap flex-row items-center justify-between">
         <HeaderSignInBtn />
         <HeaderNavigations />
         <Logo />

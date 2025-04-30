@@ -4,7 +4,7 @@ import Footer from "../components/Footer/Footer";
 
 function LayOutPage() {
   return (
-    <div className="layout-container border-transparent flex flex-wrap flex-col justify-center items-center">
+    <div className="layout-container flex flex-wrap flex-col justify-center items-center">
       <Header />
       <div className="main-container w-[95%]">
         <Outlet />
