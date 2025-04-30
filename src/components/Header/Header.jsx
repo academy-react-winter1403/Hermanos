@@ -25,7 +25,7 @@ function Header() {
   else
     return (
       <>
-        <div className="header-container text-[rgba(34,68,93,1)] w-[100%] h-[80px] flex flex-nowrap flex-row items-center justify-between bg-linear-to-br from-[rgba(164,246,222,1)] to-[rgba(255,255,255,1)]">
+        <div className="header-container text-[rgba(34,68,93,1)] w-[100%] h-[80px] flex flex-nowrap flex-row items-center justify-between">
           <HeaderSignInBtn />
           <HeaderNavigations />
           <Logo />
