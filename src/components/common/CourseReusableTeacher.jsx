@@ -1,14 +1,18 @@
 import React from "react";
 
-function CourseReusableTeacher({ lineHeight = "25px", gap = "0" }) {
+function CourseReusableTeacher({
+  lineHeight = "25px",
+  // gap = "4px",
+  teacherName,
+}) {
   return (
     <div
-      className={`course-teacher w-[95px] h-[100%] flex flex-row flex-nowrap gap-[${gap}]`}
+      className={`course-teacher w-[150px] h-[100%] flex flex-row flex-nowrap`}
     >
       <div
-        className={`teacher-name w-[70%] h-[100%] text-[12px] leading-[${lineHeight}] text-[rgba(140,159,154,1)]`}
+        className={`teacher-name w-[70%] h-[100%] text-[12px] leading-[${lineHeight}] text-[rgba(140,159,154,1)] text-nowrap text-end `}
       >
-        جان اسمیت
+        {teacherName}
       </div>
       <div className="teacher-pic w-[30%] h-[100%]">
         <img

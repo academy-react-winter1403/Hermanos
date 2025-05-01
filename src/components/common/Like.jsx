@@ -5,7 +5,7 @@ import StarMark from "./StarMark";
 import { useLocation } from "react-router-dom";
 import FlashBackIcon from "./FlashBackIcon";
 
-function Like() {
+function Like({ likeCount, dissLikeCount }) {
   const location = useLocation();
   console.log(location);
   return (
@@ -24,8 +24,8 @@ function Like() {
         </div>
       ) : (
         <div className="like-dislike h-[90%] w-[80px] flex flex-row flex-nowrap justify-between">
-          <LikeIcon />
-          <DisLikeIcon />
+          <LikeIcon likeCount={likeCount} />
+          <DisLikeIcon dissLikeCount={dissLikeCount} />
           <StarMark />
         </div>
       )}

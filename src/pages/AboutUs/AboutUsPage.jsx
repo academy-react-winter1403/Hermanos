@@ -3,7 +3,7 @@ import AboutUsForm from "../AboutUs/aboutUsPage-components/AboutUsForm";
 
 function AboutUsPage() {
   return (
-    <div className="about-us-holder w-[80%] mx-[auto] mt-[50px] h-[700px] flex flex-row flex-nowrap justify-center">
+    <div className="about-us-holder w-[80%] mx-[auto] mt-[50px] mb-[80px] h-[700px] flex flex-row flex-nowrap justify-center">
       <AboutUsForm />
       <div className="us w-[40%] h-[100%] flex flex-col items-end text-[rgba(34,68,93,1)]">
         <div className="contact-us-title w-[90%] h-[150px] mt-[70px] ">

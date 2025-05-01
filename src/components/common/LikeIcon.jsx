@@ -1,6 +1,6 @@
 import React from "react";
 
-function LikeIcon() {
+function LikeIcon({ likeCount }) {
   return (
     <div className="like w-[25px] h-[100%]">
       <img
@@ -9,7 +9,7 @@ function LikeIcon() {
         className="like-icon block w-[100%] h-[55%]"
       />
       <span className="like-count text-[10px] block text-center leading-[20px]">
-        3
+        {likeCount}
       </span>
     </div>
   );
