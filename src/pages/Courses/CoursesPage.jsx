@@ -13,6 +13,7 @@ import CoursesHolder from "./coursesPage-components/CoursesHolder";
 
 function CoursesPage() {
   const [topCoursesList, setTopCoursesList] = useState([]);
+  const [coursesRowView, setCoursesRowView] = useState(false);
 
   const getList = async () => {
     const courses = await getTopCourses();
@@ -30,9 +31,16 @@ function CoursesPage() {
           title="لیست دوره ها  "
           titleClass="text-xl font-bold mb-[30px]"
         />
-        <MainCoursesSearch />
-        <div className="main-courses-slider mb-[80px] shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[100%] lg:w-[79%] min-h-[1300px] rounded-[37px] gap-y-[40px] ">
-          <CoursesHolder topCoursesList={topCoursesList} />
+        <MainCoursesSearch
+          coursesRowView={coursesRowView}
+          setCoursesRowView={setCoursesRowView}
+        />
+        <div className="main-courses-slider mb-[80px] shadow-[8px_8px_10px_0px_rgba(0,0,0,0.16)] border border-[rgba(239,239,239,1)] p-[25px] mt-[10px] w-[100%] lg:w-[79%] rounded-[37px] gap-y-[40px] ">
+          <CoursesHolder
+            topCoursesList={topCoursesList}
+            coursesRowView={coursesRowView}
+            setCoursesRowView={setCoursesRowView}
+          />
           <div className="mt-[15px] mx-[auto] flex justify-center items-center">
             <MyCoursePagination />
           </div>

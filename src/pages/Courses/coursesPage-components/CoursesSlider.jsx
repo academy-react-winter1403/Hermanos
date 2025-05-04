@@ -3,7 +3,8 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 import CourseCard from "../../../components/common/CourseCard";
-const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
+
+const CoursesSlider = ({ sliderCard }) => {
   const SwiperStyle = {
     display: "flex",
     flexwrap: "nowrap",
@@ -25,14 +26,11 @@ const CoursesSlider = ({ sliderElement = <CourseCard /> }) => {
         modules={[Pagination]}
         className="mySwiper h-[100%] lg:w-[85%] xl:w-[80%] 2xl:w-[70%]"
       >
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
-        <SwiperSlide style={SwiperStyle}>{sliderElement}</SwiperSlide>
+        {[...Array(5)].map(() => (
+          <SwiperSlide style={SwiperStyle}>
+            <CourseCard />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );

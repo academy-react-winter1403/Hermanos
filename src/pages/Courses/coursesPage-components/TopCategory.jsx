@@ -1,9 +1,9 @@
 import React from "react";
 import FilterModal from "../../../components/common/FilterModal";
 
-function TopCategory() {
+function TopCategory({ coursesRowView, setCoursesRowView }) {
   return (
-    <div className="useless-holder  flex flex-row gap-[20px] flex-nowrap w-full sm:w-[320px] h-[60px] justify-around sm:justify-end sm:px-0 items-center sm:mr-3 md:mr-7 lg:pl-0 lg:mr-[60px]">
+    <div className="useless-holder flex flex-row gap-[20px] flex-nowrap w-full sm:w-[360px] h-[60px] justify-around sm:justify-end sm:px-0 items-center sm:mr-3 md:mr-7 lg:pl-0 lg:mr-[60px]">
       <div className="category hidden lg:block rounded-[43px] w-[200px] h-[100%]">
         <div
           tabIndex={0}
@@ -17,22 +17,42 @@ function TopCategory() {
           </div>
         </div>
       </div>
-      <div className="useless-btn  border rounded-[43px] border-[rgba(21,139,104,1)] w-[100px] h-[70%] lg:h-[100%] my-2 lg:my-0">
-        <span className="left-btn  w-[50%] h-[100%] inline-block  rounded-l-[43px] ">
+
+      <div className="useless-btn  border rounded-[43px] border-[rgba(21,139,104,1)] flex flex-row flex-nowrap w-[130px] h-[70%] lg:h-[100%] my-2 lg:my-0">
+        <span
+          onClick={() => {
+            setCoursesRowView(true);
+          }}
+          className="left-btn cursor-pointer w-[50%] h-[100%] inline-block  rounded-l-[43px] "
+        >
           <img
-            className="w-[45%] h-[45%] ml-[18px] mt-[10px] lg:mt-[15px]"
+            className={
+              coursesRowView
+                ? "w-[50%] h-[50%] ml-[25px] mt-[10px] lg:mt-[15px]"
+                : "w-[35%] h-[35%] ml-[25px] mt-[10px] lg:mt-[20px]"
+            }
             src="/images/Path 1875.svg"
             alt=""
           />
         </span>
-        <span className="right-btn  w-[50%] h-[100%] inline-block rounded-r-[43px]">
+        <span
+          onClick={() => {
+            setCoursesRowView(false);
+          }}
+          className="right-btn cursor-pointer w-[50%] h-[100%]  rounded-r-[43px]"
+        >
           <img
-            className="w-[45%] h-[45%] ml-[10px] mt-[10px] lg:mt-[15px]"
+            className={
+              coursesRowView
+                ? "w-[35%] h-[35%] ml-[10px] mt-[10px] lg:mt-[20px]"
+                : "w-[50%] h-[50%] ml-[10px] mt-[10px] lg:mt-[15px]"
+            }
             src="/images/Path 1876.svg"
             alt=""
           />
         </span>
       </div>
+
       <div className="border lg:hidden rounded-md w-[37px] h-[60%]  ">
         <svg
           xmlns="http://www.w3.org/2000/svg"

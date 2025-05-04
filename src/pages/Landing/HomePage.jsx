@@ -9,12 +9,21 @@ import SectionTitle from "../../components/common/SectionTitle";
 import Button from "../../components/common/Button";
 import SugesstCriticism from "../Landing/homePage-components/SugesstCriticism";
 import NewsSlider from "../News/newsPage-components/NewsSlider";
+import { useContext, useEffect } from "react";
+import { getSliderCards } from "../../core/services/api/sliderCards";
 
 function HomePage() {
-  window.addEventListener("scroll", function () {
-    let scrollPosition = window.scrollY;
-    console.log(scrollPosition);
-  });
+  // const { sliderCard, setSliderCard } = useContext(MainPagesGlobalState);
+  // useEffect(
+  //   function () {
+  //     async function getSlider() {
+  //       const sliderCourses = await getSliderCards();
+  //       setSliderCard(sliderCourses);
+  //     }
+  //     getSlider();
+  //   },
+  //   [setSliderCard]
+  // );
 
   return (
     <div className="homePage-content">

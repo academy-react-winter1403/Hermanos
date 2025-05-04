@@ -7,7 +7,6 @@ import FlashBackIcon from "./FlashBackIcon";
 
 function Like({ likeCount, dissLikeCount }) {
   const location = useLocation();
-  console.log(location);
   return (
     <>
       {location.pathname === "/news/:id/user-opinion" ? (

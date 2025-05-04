@@ -1,11 +1,27 @@
 import React from "react";
 import CourseCard from "../../../components/common/CourseCard";
+import RowCourseCard from "../../../components/common/RowCourseCard";
 
-const CoursesHolder = ({ topCoursesList }) => {
+const CoursesHolder = ({
+  topCoursesList,
+  coursesRowView,
+  setCoursesRowView,
+}) => {
   return (
-    <div className="holder p-4 grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-3 gap-y-10 g-x-0  drop-shadow-xl mb-1  ">
-      {topCoursesList.map((item, index) => {
-        return (
+    <div className="holder flex flex-row flex-wrap justify-center gap-[40px]">
+      {topCoursesList.map((item, index) =>
+        coursesRowView ? (
+          <RowCourseCard
+            key={index}
+            title={item.title}
+            desc={item.describe}
+            likeCount={item.likeCount}
+            dissLikeCount={item.dissLikeCount}
+            teacherName={item.teacherName}
+            price={item.cost}
+            courseStatus={item.statusName}
+          />
+        ) : (
           <CourseCard
             key={index}
             title={item.title}
@@ -16,8 +32,8 @@ const CoursesHolder = ({ topCoursesList }) => {
             price={item.cost}
             courseStatus={item.statusName}
           />
-        );
-      })}
+        )
+      )}
     </div>
   );
 };
